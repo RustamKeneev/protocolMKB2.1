@@ -311,10 +311,16 @@ public class MainUI {
         jLabel46.setBounds(800,25,250,20);
         jPanel5.add(jLabel46);
 
-
-
-
-
+        JPanel jPanel6 = new MineralogicalComposition();
+        jPanel6.setBounds(10,570,1095,200);
+        jPanel6.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+        jPanel2.add(jPanel6);
+        JLabel jLabel47 = new JLabel("ПО МИНЕРАЛОГИЧЕСКОМУ СОСТАВУ");
+        jLabel47.setBounds(396,5,300,20);
+        jPanel6.add(jLabel47);
+        JLabel jLabel48 = new JLabel("НАЗВАНИЕ ХИМИЧЕСКОГО ВЕЩЕСТВА:");
+        jLabel48.setBounds(55,30,300,20);
+        jPanel6.add(jLabel48);
 
         String regex = "\\d+";
         jButtonresult.addActionListener(new ActionListener() {
@@ -501,10 +507,33 @@ public class MainUI {
 
                 String etiology ="";
                 if (jCheckBox15.isSelected()){
-                    etiology+="Неинфекционные камни: - оксалат кальция";
+                    etiology+="Неинфекционные камни: - оксалат кальция\n";
+                }
+                if (jCheckBox16.isSelected()){
+                    etiology+="Неинфекционные камни: - фосфат кальция\n";
+                }
+                if (jCheckBox17.isSelected()){
+                    etiology+="Неинфекционные камни: - мочевая кислота\n";
+                }
+                if (jCheckBox18.isSelected()){
+                    etiology+="Инфекционные камни: - фосфат магния-аммония\n";
+                }
+                if (jCheckBox19.isSelected()){
+                    etiology+="Инфекционные камни: - апатит\n";
+                }
+                if (jCheckBox20.isSelected()){
+                    etiology+="Инфекционные камни: - урат аммония\n";
+                }
+                if (jCheckBox21.isSelected()){
+                    etiology+="Генетические причины: - цистин\n";
+                }
+                if (jCheckBox22.isSelected()){
+                    etiology+="Генетические причины: - ксантин\n";
+                }
+                if (jCheckBox23.isSelected()){
+                    etiology+="Генетические причины: - 2,8-дигидроксиаденин\n";
                 }
                 String etiology1 = !etiology.isEmpty() ? "ПО ЭТИОЛОГИИ: " +etiology: "";
-
 
                 JOptionPane.showMessageDialog(jFrame,
                         result + "\n" + clinic1 +"\n" + details +"\n"+ xray1 +"\n" + etiology1 +"\n");
