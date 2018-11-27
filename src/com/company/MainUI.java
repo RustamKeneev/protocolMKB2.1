@@ -267,13 +267,49 @@ public class MainUI {
         JPanel jPanel5 = new JPanel(null);
         jPanel2.add(jPanel5);
         jPanel5.setBorder(BorderFactory.createLineBorder(Color.BLUE));
-        jPanel5.setBounds(10,450,1095,100);
+        jPanel5.setBounds(10,450,1095,115);
         JLabel jLabel42 = new JLabel("ПО ЭТИОЛОГИИ");
-        jLabel42.setBounds(10,5,150,20);
+        jLabel42.setBounds(472,5,150,20);
         jPanel5.add(jLabel42);
         JLabel jLabel43 = new JLabel("НЕИНФЕКЦИОННЫЕ КАМНИ");
         jLabel43.setBounds(10,25,250,20);
         jPanel5.add(jLabel43);
+        JCheckBox jCheckBox15 = new JCheckBox("оксалат кальция");
+        jCheckBox15.setBounds(10,45,150,20);
+        jPanel5.add(jCheckBox15);
+        JCheckBox jCheckBox16 = new JCheckBox("фосфат кальция");
+        jCheckBox16.setBounds(10,65,150,20);
+        jPanel5.add(jCheckBox16);
+        JCheckBox jCheckBox17 = new JCheckBox("мочевая кислота");
+        jCheckBox17.setBounds(10,85,150,20);
+        jPanel5.add(jCheckBox17);
+        JLabel jLabel44 = new JLabel("ИНФНЕЦИОННЫЕ КАМНИ:");
+        jLabel44.setBounds(275,25,200,20);
+        jPanel5.add(jLabel44);
+        JCheckBox jCheckBox18 = new JCheckBox("фосфат магния-аммония");
+        jCheckBox18.setBounds(275,45,200,20);
+        jPanel5.add(jCheckBox18);
+        JCheckBox jCheckBox19 = new JCheckBox("апатит");
+        jCheckBox19.setBounds(275,65,100,20);
+        jPanel5.add(jCheckBox19);
+        JCheckBox jCheckBox20 = new JCheckBox("урат аммония");
+        jCheckBox20.setBounds(275,85,150,20);
+        jPanel5.add(jCheckBox20);
+        JLabel jLabel45 = new JLabel("ГЕНЕТИЧЕСКИЕ ПРИЧИНЫ:");
+        jLabel45.setBounds(550,25,250,20);
+        jPanel5.add(jLabel45);
+        JCheckBox jCheckBox21 = new JCheckBox("цистин");
+        jCheckBox21.setBounds(550,45,100,20);
+        jPanel5.add(jCheckBox21);
+        JCheckBox jCheckBox22 = new JCheckBox("ксантин");
+        jCheckBox22.setBounds(550,65,120,20);
+        jPanel5.add(jCheckBox22);
+        JCheckBox jCheckBox23 = new JCheckBox("2,8-дигидроксиаденин");
+        jCheckBox23.setBounds(550,85,200,20);
+        jPanel5.add(jCheckBox23);
+        JLabel jLabel46 = new JLabel("ЛЕКАРСТВЕННЫЕ КАМНИ:");
+        jLabel46.setBounds(800,25,250,20);
+        jPanel5.add(jLabel46);
 
 
 
@@ -462,8 +498,16 @@ public class MainUI {
                     xray+="Рентгеннегативный конкремент - лекарственные камни";
                 }
                 String xray1 = !xray.isEmpty() ? "По рентгенологическом характеристике:  "+xray: "";
+
+                String etiology ="";
+                if (jCheckBox15.isSelected()){
+                    etiology+="Неинфекционные камни: - оксалат кальция";
+                }
+                String etiology1 = !etiology.isEmpty() ? "ПО ЭТИОЛОГИИ: " +etiology: "";
+
+
                 JOptionPane.showMessageDialog(jFrame,
-                        result + "\n" + clinic1 +"\n" + details +"\n"+ xray1 +"\n");
+                        result + "\n" + clinic1 +"\n" + details +"\n"+ xray1 +"\n" + etiology1 +"\n");
             }
         });
 
