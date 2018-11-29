@@ -728,8 +728,95 @@ public class MainUI {
                 }
                 String etiology1 = !etiology.isEmpty() ? "ПО ЭТИОЛОГИИ: " +etiology: "";
 
+                String mineral ="";
+                if (jCheckBox24.isSelected()){
+                    mineral+="Моногидрат оксалата кальция - (Вевеллит - CaC2O4.H2O)";
+                }
+                if (jCheckBox25.isSelected()){
+                    mineral +="Дигидрат оксалата кальция - (Ведделлит - CaC2O4.2H2O)";
+                }
+                if (jCheckBox26.isSelected()){
+                    mineral+="Фосфат кальция - (Апатит - Ca10(PO4)6.(OH)2)";
+                }
+                if (jCheckBox27.isSelected()){
+                    mineral+="Гидроксофосфат кальция - (Гидроксиапатит - Ca5(PO3)3(OH))";
+                }
+                if (jCheckBox28.isSelected()){
+                    mineral+="β-трехкальциевый фосфат - (Витлокит - Ca3(PO4)2)";
+                }
+                if (jCheckBox29.isSelected()){
+                    mineral+="Фосфат карбонатапатита - (Даллит - Ca5(PO4)3OH\n)";
+                }
+                if (jCheckBox30.isSelected()){
+                    mineral+="Гидрогенфосфат кальция - (Брушит - CaHPO4.2H2O)";
+                }
+                if (jCheckBox31.isSelected()){
+                    mineral+="Карбонат кальция - (Арагонит - CaCO3)";
+                }
+                if (jCheckBox32.isSelected()){
+                    mineral+="Восьмикальциевый фосфат - (Ca8H2(PO4)6.5H2O)";
+                }
+                if (jCheckBox33.isSelected()){
+                    mineral+="Дигидрат мочевой кислоты - (Урицит - C5H4N4O3)";
+                }
+                if (jCheckBox34.isSelected()){
+                    mineral+="Урат аммония - (NH4C5H3N4O3)";
+                }
+                if (jCheckBox35.isSelected()){
+                    mineral+="Кислый урат натрия моногидрат - (NaC5H3N4O3.H2O)";
+                }
+                if (jCheckBox36.isSelected()){
+                    mineral+="Фосфат магния-аммония - (Струвит - MgNH4PO4.6H2O)";
+                }
+                if (jCheckBox37.isSelected()){
+                    mineral+="Кислый фосфат магния тригидрат - (Ньюберит - MgHPO4.3H2O)";
+                }
+                if (jCheckBox38.isSelected()){
+                    mineral+="Фосфат магния-аммония дигидрат - (Диттмарит - MgNH4(PO4).1H2O)";
+                }
+                if (jCheckBox39.isSelected()){
+                    mineral+="Цистин - ([SCH2CH(NH2)COOH]2)";
+                }
+                if (jCheckBox40.isSelected()){
+                    mineral+="Гипс - (Сульфат кальция дигидрат - CaSO4.2H2O)\n"+"Гипс - (Фосфат цинка тетрагидрат - Zn3(PO4)2.4H2O)";;
+                }
+                if (jCheckBox41.isSelected()){
+                    mineral+="Ксантин";
+                }
+                if (jCheckBox42.isSelected()){
+                    mineral+="2,8-дигидроксиаденин";
+                }
+                if (jCheckBox43.isSelected()){
+                    mineral+="Белки";
+                }
+                if (jCheckBox44.isSelected()){
+                    mineral+="Холестерин";
+                }
+                if (jCheckBox45.isSelected()){
+                    mineral+="Кальцит";
+                }
+                if (jCheckBox46.isSelected()){
+                    mineral+="Урат калия";
+                }
+                if (jCheckBox47.isSelected()){
+                    mineral+="Трехмагниевый фосфат";
+                }
+                if (jCheckBox48.isSelected()){
+                    mineral+="Меламин";
+                }
+                if (jCheckBox49.isSelected()){
+                    mineral+="Матрикс";
+                }
+                if (jCheckBox50.isSelected()){
+                    mineral+="Лекарственные камни - (-Активные соединения, кристаллизующиеся в моче\n  --Вещества, ухудшающие состав мочи )";
+                }
+                if (jCheckBox51.isSelected()){
+                    mineral+="Конкременты из инородных тел";
+                }
+                String mineral1 = !mineral.isEmpty() ? "ПО МИНЕРАЛОГИЧЕСКОМУ СОСТАВУ " + mineral: "";
+
                 JOptionPane.showMessageDialog(jFrame,
-                        result + "\n" + clinic1 +"\n" + details +"\n"+ xray1 +"\n" + etiology1 +"\n");
+                        result + "\n" + clinic1 +"\n" + details +"\n"+ xray1 +"\n" + etiology1 +"\n" + mineral1 +"\n");
             }
         });
 
