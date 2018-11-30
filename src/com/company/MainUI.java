@@ -516,7 +516,7 @@ public class MainUI {
 
         JPanel jPanel7 = new JPanel(null);
         jPanel2.add(jPanel7);
-        jPanel7.setBounds(10,1390,1095,740);
+        jPanel7.setBounds(10,1390,1095,765);
         jPanel7.setBorder(BorderFactory.createLineBorder(Color.BLUE));
         JLabel jLabel85 = new JLabel("ПО ГРУППАМ РИСКА ОБРАЗОВАНИЯ КАМНЕЙ");
         jLabel85.setBounds(385,5,350,20);
@@ -588,45 +588,48 @@ public class MainUI {
         JCheckBox jCheckBox70 = new JCheckBox("Синдром Леша-Нихена");
         jCheckBox70.setBounds(10,455,200,20);
         jPanel7.add(jCheckBox70);
-        JLabel jLabel89 = new JLabel("ЛЕКАРСТВЕННЫЕ ПРЕПАРАТЫ, СПОСОБСТВУЩИЕ КАМНЕОБРАЗОВАНИЮ:");
-        jLabel89.setBounds(287,475,520,20);
-        jPanel7.add(jLabel89);
-        JCheckBox jCheckBox71 = new JCheckBox("Кальциевые добавки");
-        jCheckBox71.setBounds(10,495,200,20);
+        JCheckBox jCheckBox71 = new JCheckBox("Муковисцидоз");
+        jCheckBox71.setBounds(10,475,200,20);
         jPanel7.add(jCheckBox71);
-        JCheckBox jCheckBox72 = new JCheckBox("Добавки с витамином D");
+        JLabel jLabel89 = new JLabel("ЛЕКАРСТВЕННЫЕ ПРЕПАРАТЫ, СПОСОБСТВУЩИЕ КАМНЕОБРАЗОВАНИЮ:");
+        jLabel89.setBounds(287,495,520,20);
+        jPanel7.add(jLabel89);
+        JCheckBox jCheckBox72 = new JCheckBox("Кальциевые добавки");
         jCheckBox72.setBounds(10,515,200,20);
         jPanel7.add(jCheckBox72);
-        JCheckBox jCheckBox73 = new JCheckBox("Аскорбиновая кислота (>4 г в день)");
-        jCheckBox73.setBounds(10,535,350,20);
+        JCheckBox jCheckBox73 = new JCheckBox("Добавки с витамином D");
+        jCheckBox73.setBounds(10,535,200,20);
         jPanel7.add(jCheckBox73);
-        JCheckBox jCheckBox74 = new JCheckBox("Сульфаниламиды (Триамтерен, Индинавира)");
+        JCheckBox jCheckBox74 = new JCheckBox("Аскорбиновая кислота (>4 г в день)");
         jCheckBox74.setBounds(10,555,350,20);
         jPanel7.add(jCheckBox74);
-        JLabel jLabel90 = new JLabel("АНАТОМИЧЕСКИЕ И УРОДИНАМИЧЕСКИЕ НАРУШЕНИЯ, СПОСОБСТВУЮЩИЕ КАМНЕОБРАЗОВАНИЮ:");
-        jLabel90.setBounds(200,575,700,20);
-        jPanel7.add(jLabel90);
-        JCheckBox jCheckBox75 = new JCheckBox("Медуллярная губчатая почка (тубулярная эктазия)");
-        jCheckBox75.setBounds(10,595,400,20);
+        JCheckBox jCheckBox75 = new JCheckBox("Сульфаниламиды (Триамтерен, Индинавира)");
+        jCheckBox75.setBounds(10,575,350,20);
         jPanel7.add(jCheckBox75);
-        JCheckBox jCheckBox76 = new JCheckBox("Обструкция лоханочно-мочеточникового сегмента (ЛМС)");
-        jCheckBox76.setBounds(10,615,500,20);
+        JLabel jLabel90 = new JLabel("АНАТОМИЧЕСКИЕ И УРОДИНАМИЧЕСКИЕ НАРУШЕНИЯ, СПОСОБСТВУЮЩИЕ КАМНЕОБРАЗОВАНИЮ:");
+        jLabel90.setBounds(200,595,700,20);
+        jPanel7.add(jLabel90);
+        JCheckBox jCheckBox76 = new JCheckBox("Медуллярная губчатая почка (тубулярная эктазия)");
+        jCheckBox76.setBounds(10,615,400,20);
         jPanel7.add(jCheckBox76);
-        JCheckBox jCheckBox77 = new JCheckBox("Дивертикул чашки, киста чашки");
-        jCheckBox77.setBounds(10,635,400,20);
+        JCheckBox jCheckBox77 = new JCheckBox("Обструкция лоханочно-мочеточникового сегмента (ЛМС)");
+        jCheckBox77.setBounds(10,635,500,20);
         jPanel7.add(jCheckBox77);
-        JCheckBox jCheckBox78 = new JCheckBox("Стриктура мочеточника");
-        jCheckBox78.setBounds(10,655,250,20);
+        JCheckBox jCheckBox78 = new JCheckBox("Дивертикул чашки, киста чашки");
+        jCheckBox78.setBounds(10,655,400,20);
         jPanel7.add(jCheckBox78);
-        JCheckBox jCheckBox79 = new JCheckBox("Пузырно-мочеточниково-почечный рефлюкс");
-        jCheckBox79.setBounds(10,675,400,20);
+        JCheckBox jCheckBox79 = new JCheckBox("Стриктура мочеточника");
+        jCheckBox79.setBounds(10,675,250,20);
         jPanel7.add(jCheckBox79);
-        JCheckBox jCheckBox80 = new JCheckBox("Подковообразная почка");
-        jCheckBox80.setBounds(10,695,250,20);
+        JCheckBox jCheckBox80 = new JCheckBox("Пузырно-мочеточниково-почечный рефлюкс");
+        jCheckBox80.setBounds(10,695,400,20);
         jPanel7.add(jCheckBox80);
-        JCheckBox jCheckBox81 = new JCheckBox("Уретероцеле");
-        jCheckBox81.setBounds(10,715,200,20);
+        JCheckBox jCheckBox81 = new JCheckBox("Подковообразная почка");
+        jCheckBox81.setBounds(10,715,250,20);
         jPanel7.add(jCheckBox81);
+        JCheckBox jCheckBox82 = new JCheckBox("Уретероцеле");
+        jCheckBox82.setBounds(10,735,200,20);
+        jPanel7.add(jCheckBox82);
 
 
         String regex = "\\d+";
@@ -929,8 +932,104 @@ public class MainUI {
                 }
                 String mineral1 = !mineral.isEmpty() ? "ПО МИНЕРАЛОГИЧЕСКОМУ СОСТАВУ " + mineral: "";
 
+                String riskFormation = "";
+                if (jCheckBox52.isSelected()){
+                    riskFormation += "О6щие факторы - Развитие МКБ в раннем возрасте (особенно у детей и подростков)\n";
+                }
+                if (jCheckBox53.isSelected()){
+                    riskFormation+="О6щие факторы - Семейный анамнез МКБ";
+                }
+                if (jCheckBox54.isSelected()){
+                    riskFormation+="О6щие факторы - Брушит в составе камней (гидрогенфосфат кальция; СаНРО4  2(Н,0)\n";
+                }
+                if (jCheckBox55.isSelected()){
+                    riskFormation+="О6щие факторы - Мочевая кислота и урат в составе камней\n";
+                }
+                if (jCheckBox56.isSelected()){
+                    riskFormation+="О6щие факторы - Инфекционные камни\n";
+                }
+                if (jCheckBox57.isSelected()){
+                    riskFormation+="О6щие факторы - Единственная почка\n";
+                }
+                if (jCheckBox58.isSelected()){
+                    riskFormation+="Заболевания, связанные с развитием МКБ - Гиперпаратиреоз\n";
+                }
+                if (jCheckBox59.isSelected()){
+                    riskFormation+="Заболевания, связанные с развитием МКБ - Метаболический синдром\n";
+                }
+                if (jCheckBox60.isSelected()){
+                    riskFormation+="Заболевания, связанные с развитием МКБ - Поликистозная болезнь почек\n";
+                }
+                if (jCheckBox61.isSelected()){
+                    riskFormation+="Заболевания, связанные с развитием МКБ - Нефрокальциноз\n";
+                }
+                if (jCheckBox62.isSelected()){
+                    riskFormation+="Заболевания, связанные с развитием МКБ - Заболевания и патологии ЖКТ (еюноилеальный обходной анастомоз, резекция кишечника,\nболезнь Крона, мальабсорбция, " +
+                            "кишечная гипероксалурия после деривации мочи) и бариатрические операции\\n";
+                }
+                if (jCheckBox63.isSelected()){
+                    riskFormation+="Заболевания, связанные с развитием МКБ - Саркоидоз\n";
+                }
+                if (jCheckBox64.isSelected()){
+                    riskFormation+="Заболевания, связанные с развитием МКБ - Повреждение спинного мозга, нейрогенный мочевой пузырь\n";
+                }
+                if (jCheckBox65.isSelected()){
+                    riskFormation+="Генетические причины МКБ - Цистинурия (типы А, В, АВ)\n";
+                }
+                if (jCheckBox66.isSelected()){
+                    riskFormation+="Генетические причины МКБ - Первичная гипероксалурия (ПГ)\n";
+                }
+                if (jCheckBox67.isSelected()){
+                    riskFormation+="Генетические причины МКБ - Почечный канальцевый ацидоз (ПКА) 1-го типа\n";
+                }
+                if (jCheckBox68.isSelected()){
+                    riskFormation+="Генетические причины МКБ - 2,8-дигидроксиаденинурия\n";
+                }
+                if (jCheckBox69.isSelected()){
+                    riskFormation+="Генетические причины МКБ - Ксантинурия\n";
+                }
+                if (jCheckBox70.isSelected()){
+                    riskFormation+="Генетические причины МКБ - Синдром Леша-Нихена\n";
+                }
+                if (jCheckBox71.isSelected()){
+                    riskFormation+="Генетические причины МКБ - Муковисцидоз\n";
+                }
+                if (jCheckBox72.isSelected()){
+                    riskFormation+="Лекарственные препараты, способствующие камнеобразованию: - Кальциевые добавки.\n";
+                }
+                if (jCheckBox73.isSelected()){
+                    riskFormation+="Лекарственные препараты, способствующие камнеобразованию: - Добавки с витамином D.\n";
+                }
+                if (jCheckBox74.isSelected()){
+                    riskFormation+="Лекарственные препараты, способствующие камнеобразованию: - Аскорбиновая кислота (>4 г в день).\n";
+                }
+                if (jCheckBox75.isSelected()){
+                    riskFormation+="Лекарственные препараты, способствующие камнеобразованию: - Сульфаниламиды (Триамтерен, Индинавира)\n";
+                }
+                if (jCheckBox76.isSelected()){
+                    riskFormation+="Анатомические и уродинамические нарушения, способствующие камнеобразованию - Медуллярная губчатая почка (тубулярная эктазия)\n";
+                }
+                if (jCheckBox77.isSelected()){
+                    riskFormation+="Анатомические и уродинамические нарушения, способствующие камнеобразованию - Обструкция лоханочно-мочеточникового \n сегмента (ЛМС)\n";
+                }
+                if (jCheckBox78.isSelected()){
+                    riskFormation+="Анатомические и уродинамические нарушения, способствующие камнеобразованию - Дивертикул чашки, киста чашки\n";
+                }
+                if (jCheckBox79.isSelected()){
+                    riskFormation+="Анатомические и уродинамические нарушения, способствующие камнеобразованию - Стриктура мочеточника\n";
+                }
+                if (jCheckBox80.isSelected()){
+                    riskFormation+="Анатомические и уродинамические нарушения, способствующие камнеобразованию - Пузырно-мочеточниково-почечныйрефлюкс\n";
+                }
+                if (jCheckBox81.isSelected()){
+                    riskFormation+="Анатомические и уродинамические нарушения, способствующие камнеобразованию - Подковообразная почка\n";
+                }
+                if (jCheckBox82.isSelected()){
+                    riskFormation+="Анатомические и уродинамические нарушения, способствующие камнеобразованию - Уретероцеле\n";
+                }
+                String riskFormation1 = !riskFormation.isEmpty() ? "ПО ГРУППАМ РИСКА ОБРАЗОВАНИЯ КАМНЕЙ: " +riskFormation : "\n";
                 JOptionPane.showMessageDialog(jFrame,
-                        result + "\n" + clinic1 +"\n" + details +"\n"+ xray1 +"\n" + etiology1 +"\n" + mineral1 +"\n");
+                        result + "\n" + clinic1 +"\n" + details +"\n"+ xray1 +"\n" + etiology1 +"\n" + mineral1 +"\n" + riskFormation1 + "\n");
             }
         });
 
