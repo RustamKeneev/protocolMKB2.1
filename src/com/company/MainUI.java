@@ -631,6 +631,17 @@ public class MainUI {
         jCheckBox82.setBounds(10,735,200,20);
         jPanel7.add(jCheckBox82);
 
+        JPanel jPanel8 = new JPanel(null);
+        jPanel2.add(jPanel8);
+        jPanel8.setBounds(10,2160,1095,200);
+        jPanel8.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+        JLabel jLabel91 = new JLabel("КЛИНИЧЕСКАЯ КАРТИНА");
+        jLabel91.setBounds(458,5,180,20);
+        jPanel8.add(jLabel91);
+        JLabel jLabel92 = new JLabel("Почечная колика:");
+        jLabel92.setBounds(10,25,150,20);
+        jPanel8.add(jLabel92);
+
 
         String regex = "\\d+";
         jButtonresult.addActionListener(new ActionListener() {
