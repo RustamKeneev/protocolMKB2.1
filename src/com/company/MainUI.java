@@ -29,7 +29,7 @@ public class MainUI {
         JPanel jPanel2 = new JPanel(null);
         jPanel.add(jPanel2, BorderLayout.CENTER);
         jPanel2.setBorder(BorderFactory.createLineBorder(Color.BLUE));
-        jPanel2.setPreferredSize(new Dimension(1020, 2500));
+        jPanel2.setPreferredSize(new Dimension(1020, 3500));
 
         JPanel jPanel3 = new JpanelLongStone();
         jPanel2.add(jPanel3);
@@ -776,6 +776,34 @@ public class MainUI {
         jTextField33.setBounds(1040,81,40,20);
         jPanel8.add(jTextField33);
 
+        JPanel jPanel9 = new JPanel(null);
+        jPanel2.add(jPanel9);
+        jPanel9.setBounds(10,2340,1095,300);
+        jPanel9.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+        JLabel jLabel119 = new JLabel("ДИАГНОСТИКА");
+        jLabel119.setBounds(472,5,150,20);
+        jPanel9.add(jLabel119);
+        JLabel jLabel120 = new JLabel("<html>Стандартное обследование включает  " +
+                "подробный сбор  анамнеза и физикальное исследование, лабораторные исследования и методы диагностической " +
+                "визуализации методы диагностической визуализации и др.</html>");
+        jLabel120.setBounds(10,25,1095,40);
+        jPanel9.add(jLabel120);
+        JLabel jLabel121 = new JLabel("Диагностическая визуализация");
+        jLabel121.setBounds(422,65,250,20);
+        jPanel9.add(jLabel121);
+        JLabel jLabel122 = new JLabel("* УЗИ почек, мочеточников, мочевого пузыря (22,23).");
+        jLabel122.setBounds(10,85,500,20);
+        jPanel9.add(jLabel122);
+        JLabel jLabel123 = new JLabel("* Обзорная урография (20,). Не следует назначать обзорный снимок, если планируется проведение бесконтрастной КТ(21).");
+        jLabel123.setBounds(10,105,1095,20);
+        jPanel9.add(jLabel123);
+        JLabel jLabel124 = new JLabel("<html>Если обзорная урография не информативна следует провести бескотрастную КТ или, если последняя недоступна, внутривенную урографию (24)." +
+                " Последнюю не рекомендуется  при аллергии на контрастное вещество, содержанием креатинина крови более 172 мкмоль\\л (25), принимающим метморфин, с миеломатозом." +
+                "  Бесконтрастная КТ может быть использована для подтверждения диагноза МКБ у больных с почечной коликой, т.к. этот метод превосходит метод в/в экскреторной " +
+                "урографии (26). КТ может определить среднюю плотность конкремента и расстояние от конкремента до кожного покрова — параметры, влияющие на эффективность ДУВЛ" +
+                " (27-30). Но не предоставляет данных о функции почек и индивидуальных анатомических особенностях мочевыводящей системы, а также сопровождается высокой дозой облучения.</html>");
+        jLabel124.setBounds(10,125,1095,85);
+        jPanel9.add(jLabel124);
 
 
         String regex = "\\d+";
