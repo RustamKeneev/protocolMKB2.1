@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class MainUI {
-    public void build(String[] args) {
+    public void build(String[] transparency, String[] ColoursOfUrine, String[] cilindresUrine, String[] slimeUrine, String []saltUrine) {
         JFrame jFrame = new JFrame();
         JPanel jPanel = new JPanel(new BorderLayout());
         jPanel.setBorder(BorderFactory.createLineBorder(Color.BLUE));
@@ -819,7 +819,7 @@ public class MainUI {
         JPanel jPanel11 = new JPanel(null);
         jPanel10.add(jPanel11);
         jPanel11.setBorder(BorderFactory.createLineBorder(Color.BLUE));
-        jPanel11.setBounds(5,50,185,360);
+        jPanel11.setBounds(5,50,185,370);
         JLabel jLabel126 = new JLabel("ОБЩИЙ АНАЛИЗ КРОВИ:");
         jLabel126.setBounds(5,10,185,20);
         jPanel11.add(jLabel126);
@@ -902,6 +902,181 @@ public class MainUI {
         jTextField46.setBounds(145,330, 30,20);
         jPanel11.add(jTextField46);
 
+        JPanel jPanel12 = new JPanel(null);
+        jPanel10.add(jPanel12);
+        jPanel12.setBounds(195,50,300,370);
+        jPanel12.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+        JLabel jLabel140 = new JLabel("ОБЩИЙ АНАЛИЗ МОЧИ:");
+        jLabel140.setBounds(60,10, 180,20);
+        jPanel12.add(jLabel140);
+        JLabel jLabel141 = new JLabel("цвет:");
+        jLabel141.setBounds(5,30,100,20);
+        jPanel12.add(jLabel141);
+        JComboBox jComboBox =new JComboBox(ColoursOfUrine);
+        jComboBox.setBounds(135,30,160,20);
+        jPanel12.add(jComboBox);
+        JLabel jLabel142 = new JLabel("прозрачность:");
+        jLabel142.setBounds(5,55,100,20);
+        jPanel12.add(jLabel142);
+        JComboBox jComboBox1 = new JComboBox(transparency);
+        jPanel12.add(jComboBox1);
+        jComboBox1.setBounds(135,55,160,20);
+        JLabel jLabel143 = new JLabel("удельный вес:");
+        jLabel143.setBounds(5,80,110,20);
+        jPanel12.add(jLabel143);
+        JTextField jTextField47 = new JTextField();
+        jTextField47.setBounds(135,80,160,20);
+        jPanel12.add(jTextField47);
+        JLabel jLabel144 = new JLabel("белок:");
+        jLabel144.setBounds(5,105,100,20);
+        jPanel12.add(jLabel144);
+        JTextField jTextField48 = new JTextField();
+        jTextField48.setBounds(135,105,160,20);
+        jPanel12.add(jTextField48);
+        JLabel jLabel145 = new JLabel("плоский эпителий:");
+        jLabel145.setBounds(5, 130,130,20);
+        jPanel12.add(jLabel145);
+        JTextField jTextField49 = new JTextField();
+        jTextField49.setBounds(135,130,160,20);
+        jPanel12.add(jTextField49);
+        JLabel jLabel146 = new JLabel("глюкоза:");
+        jLabel146.setBounds(5,155,100,20);
+        jPanel12.add(jLabel146);
+        JTextField jTextField50 = new JTextField();
+        jTextField50.setBounds(135,155,160,20);
+        jPanel12.add(jTextField50);
+        JLabel jLabel147 = new JLabel("эритроциты:");
+        jLabel147.setBounds(5,180,100,20);
+        jPanel12.add(jLabel147);
+        JTextField jTextField51 = new JTextField();
+        jTextField51.setBounds(135,180,160,20);
+        jPanel12.add(jTextField51);
+        JLabel jLabel148 = new JLabel("лейкоциты:");
+        jLabel148.setBounds(5,205,100,20);
+        jPanel12.add(jLabel148);
+        JTextField jTextField52 = new JTextField();
+        jTextField52.setBounds(135,205,160,20);
+        jPanel12.add(jTextField52);
+        JLabel jLabel149 = new JLabel("Ph");
+        jLabel149.setBounds(5,230,100,20);
+        jPanel12.add(jLabel149);
+        JTextField jTextField53 = new JTextField();
+        jTextField53.setBounds(135,230,160,20);
+        jPanel12.add(jTextField53);
+        JLabel jLabel150 = new JLabel("цилиндры:");
+        jLabel150.setBounds(5,255,100,20);
+        jPanel12.add(jLabel150);
+        JComboBox jComboBox2 = new JComboBox(cilindresUrine);
+        jComboBox2.setBounds(135,255,160,20);
+        jPanel12.add(jComboBox2);
+        JLabel jLabel151 = new JLabel("слизь:");
+        jLabel151.setBounds(5,280,100,20);
+        jPanel12.add(jLabel151);
+        JComboBox jComboBox3 = new JComboBox(slimeUrine);
+        jComboBox3.setBounds(135,280,160,20);
+        jPanel12.add(jComboBox3);
+        JLabel jLabel152 = new JLabel("бактерии:");
+        jLabel152.setBounds(5,305,100,20);
+        jPanel12.add(jLabel152);
+        JTextField jTextField54 = new JTextField();
+        jTextField54.setBounds(135,305,160,20);
+        jPanel12.add(jTextField54);
+        JLabel jLabel153 = new JLabel("соли:");
+        jLabel153.setBounds(5,330,100,20);
+        jPanel12.add(jLabel153);
+        JComboBox jComboBox4 = new JComboBox(saltUrine);
+        jComboBox4.setBounds(135,330,160,20);
+        jPanel12.add(jComboBox4);
+
+        JPanel jPanel13 = new JPanel(null);
+        jPanel13.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+        jPanel13.setBounds(500,50,180,105);
+        jPanel10.add(jPanel13);
+        JLabel jLabel154 = new JLabel("ПРОБА НЕЧИПОРЕНКО");
+        jLabel154.setBounds(5,10,180,20);
+        jPanel13.add(jLabel154);
+        JLabel jLabel155 = new JLabel("Цилиндры:");
+        jLabel155.setBounds(5,30,100,20);
+        jPanel13.add(jLabel155);
+        JTextField jTextField55 = new JTextField();
+        jTextField55.setBounds(135,30,40,20);
+        jPanel13.add(jTextField55);
+        JLabel jLabel156 = new JLabel("Эритроциты:");
+        jLabel156.setBounds(5,55,100,20);
+        jPanel13.add(jLabel156);
+        JTextField jTextField56 = new JTextField();
+        jTextField56.setBounds(135,55,40,20);
+        jPanel13.add(jTextField56);
+        JLabel jLabel157 = new JLabel("Лейкоциты:");
+        jLabel157.setBounds(5,80,100,20);
+        jPanel13.add(jLabel157);
+        JTextField jTextField57 = new JTextField();
+        jTextField57.setBounds(135,80,40,20);
+        jPanel13.add(jTextField57);
+
+        JPanel jPanel14 = new JPanel(null);
+        jPanel14.setBounds(500,160,180,130);
+        jPanel10.add(jPanel14);
+        jPanel14.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+        JLabel jLabel158 = new JLabel("ПРОБА ЗИМНИЦСКОГО");
+        jLabel158.setBounds(5,10,170,20);
+        jPanel14.add(jLabel158);
+        JLabel jLabel159 = new JLabel("Удельный вес:");
+        jLabel159.setBounds(5,30,110,20);
+        jPanel14.add(jLabel159);
+        JTextField jTextField58 = new JTextField();
+        jTextField58.setBounds(135,30,40,20);
+        jPanel14.add(jTextField58);
+        JLabel jLabel160 = new JLabel("Дневной диурез:");
+        jLabel160.setBounds(5,55,120,20);
+        jPanel14.add(jLabel160);
+        JTextField jTextField59 = new JTextField();
+        jTextField59.setBounds(135,56,40,20);
+        jPanel14.add(jTextField59);
+        JLabel jLabel161 = new JLabel("Ночной диурез:");
+        jLabel161.setBounds(5,80,120,20);
+        jPanel14.add(jLabel161);
+        JTextField jTextField60 = new JTextField();
+        jTextField60.setBounds(135,82,40,20);
+        jPanel14.add(jTextField60);
+        JLabel jLabel162 = new JLabel("Общий диурез:");
+        jLabel162.setBounds(5,105,120,20);
+        jPanel14.add(jLabel162);
+        JTextField jTextField61 = new JTextField();
+        jTextField61.setBounds(135,105,40,20);
+        jPanel14.add(jTextField61);
+
+        JPanel jPanel15 = new JPanel(null);
+        jPanel15.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+        jPanel15.setBounds(500,295,180,125);
+        jPanel10.add(jPanel15);
+        JLabel jLabel163 = new JLabel("ПЕЧЕНОЧНЫЕ ТЕСТЫ");
+        jLabel163.setBounds(15,5,150,20);
+        jPanel15.add(jLabel163);
+        JLabel jLabel164 = new JLabel("общий билирубин:");
+        jLabel164.setBounds(5,25,130,20);
+        jPanel15.add(jLabel164);
+        JTextField jTextField62 = new JTextField();
+        jTextField62.setBounds(135,25,40,20);
+        jPanel15.add(jTextField62);
+        JLabel jLabel165 = new JLabel("прямой:");
+        jLabel165.setBounds(5,50,100,20);
+        jPanel15.add(jLabel165);
+        JTextField jTextField63 = new JTextField();
+        jTextField63.setBounds(135,50,40,20);
+        jPanel15.add(jTextField63);
+        JLabel jLabel166 = new JLabel("непрямой:");
+        jLabel166.setBounds(5,75,100,20);
+        jPanel15.add(jLabel166);
+        JTextField jTextField64 = new JTextField();
+        jTextField64.setBounds(135,75,40,20);
+        jPanel15.add(jTextField64);
+        JLabel jLabel167 = new JLabel("тимоловая проба:");
+        jLabel167.setBounds(5,100,130,20);
+        jPanel15.add(jLabel167);
+        JTextField jTextField65 = new JTextField();
+        jTextField65.setBounds(135,100,40,20);
+        jPanel15.add(jTextField65);
 
         String regex = "\\d+";
         jButtonresult.addActionListener(new ActionListener() {
@@ -1678,11 +1853,96 @@ public class MainUI {
 //                        System.out.println("Вы ввели не верную число:");
                     }
                 }
+                String svetyMocha = (String) jComboBox.getSelectedItem();
+                OAK += svetyMocha;
 
+                String generalUrineAnalysis ="";
 
+                String transparency = (String) jComboBox1.getSelectedItem();
+                generalUrineAnalysis +=transparency;
+
+                String udelniyVesString = jTextField47.getText();
+                if (!udelniyVesString.isEmpty()) {
+                    int udelniyVes = Integer.parseInt(udelniyVesString);
+                    if (udelniyVes >= 1005 && udelniyVes <= 1025) {
+                        generalUrineAnalysis += "Показатели удельного веса соответствует к норму\n";
+//                                System.out.println("Показатели удельного веса соответствует к норму");
+                    } else if (udelniyVes < 1005) {
+                        generalUrineAnalysis += "Показатели удельного веса снижен\n";
+//                                System.out.println("Показатели удельного веса снижен");
+                    } else if (udelniyVes > 1025) {
+                        generalUrineAnalysis += "Показатели удельного веса превышен\n";
+//                                System.out.println("Показатели удельного веса превышен");
+                    } else {
+                        generalUrineAnalysis +="Вы ввели неправильную показатели удельного веса\n";
+//                                System.out.println("Вы ввели неправильную показатели удельного веса");
+                    }
+                }
+                String urineProteinString = jTextField48.getText();
+                if (!urineProteinString.isEmpty()){
+                    double urineProtein = Double.parseDouble(urineProteinString);
+                    if (urineProtein>=0.001 && urineProtein<=0.035 ){
+                        generalUrineAnalysis+="Показатели белок мочи в норме";
+                    }else if (urineProtein>0.036){
+                        generalUrineAnalysis+="Показатели белок мочи превышено";
+                    }else {
+                        generalUrineAnalysis+="Вы ввели неправильную число";
+                    }
+                }
+                String epiteliyString = jTextField49.getText();
+                if (!epiteliyString.isEmpty()){
+                    // добить их значений
+                }
+
+                String nechiporenko = "";
+                String cilindresString = jTextField55.getText();
+                if (!cilindresString.isEmpty()) {
+                    int cilindres = Integer.parseInt(cilindresString);
+                    if (cilindres == 20) {
+                        nechiporenko += "Показатели цилиндры соответствует к норму\n";
+//                            System.out.println("Показатели цилиндры соответствует к норму");
+                    } else if (cilindres < 19) {
+                        nechiporenko += "Показатели цилиндры в норме, цилиндры не должен соржать не более 20\n";
+//                            System.out.println("Показатели цилиндры в норме, цилиндры не должен соржать не более 20");
+                    } else if (cilindres > 21) {
+                        nechiporenko +="Показатели цилиндры превышен\n";
+//                            System.out.println("Показатели цилиндры превышен");
+                    } else {
+                        nechiporenko += "Вы ввели непавильную показатели цилиндра мочи\n";
+//                            System.out.println("Вы ввели непавильную показатели цилиндра мочи");
+                    }
+                }
+                String eritrocitesString =jTextField56.getText();
+                if (!eritrocitesString.isEmpty()) {
+                    int eritrocites = Integer.parseInt(eritrocitesString);
+                    if (eritrocites <= 1000) {
+                        nechiporenko += "Показатели эритроциты соответствует к  норму\n";
+//                            System.out.println("Показатели эритроциты соответствует к  норму");
+                    } else if (eritrocites > 1000) {
+                        nechiporenko += "Показатели эритроцитов превышен\n";
+//                            System.out.println("Показатели эритроцитов превышен");
+                    } else {
+                        nechiporenko += "Вы ввели неправильную показатели эритроцитов\n";
+//                            System.out.println("Вы ввели неправильную показатели эритроцитов");
+                    }
+                }
+                String leykocitesString = jTextField57.getText();
+                if (!leykocitesString.isEmpty()) {
+                    int leykocites = Integer.parseInt(leykocitesString);
+                    if (leykocites <= 2000) {
+                        nechiporenko += "Показатели лейкоцитов соответствует к норму\n";
+//                                System.out.println("Показатели лейкоцитов соответствует к норму");
+                    } else if (leykocites > 2000) {
+                        nechiporenko += "Показатели лейкоцитов превышен\n";
+//                                System.out.println("Показатели лейкоцитов превышен");
+                    } else {
+                        nechiporenko += "Вы ввели неправильную показатели лейкоцитов\n";
+//                                System.out.println("Вы ввели неправильную показатели лейкоцитов");
+                    }
+                }
                 JOptionPane.showMessageDialog(jFrame,
                         result + "\n" + clinic1 + "\n" + details + "\n" + xray1 + "\n" + etiology1 + "\n" + mineral1 + "\n" + riskFormation1 + "\n"+ Hours + "\n" + Days + "\n"
-                +OAK +"\n");
+                +OAK +"\n" + generalUrineAnalysis + "\n" +nechiporenko +"\n");
             }
         });
 
