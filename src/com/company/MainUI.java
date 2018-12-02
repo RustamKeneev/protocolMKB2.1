@@ -778,7 +778,7 @@ public class MainUI {
 
         JPanel jPanel9 = new JPanel(null);
         jPanel2.add(jPanel9);
-        jPanel9.setBounds(10,2340,1095,300);
+        jPanel9.setBounds(10,2340,1095,220);
         jPanel9.setBorder(BorderFactory.createLineBorder(Color.BLUE));
         JLabel jLabel119 = new JLabel("ДИАГНОСТИКА");
         jLabel119.setBounds(472,5,150,20);
@@ -804,6 +804,103 @@ public class MainUI {
                 " (27-30). Но не предоставляет данных о функции почек и индивидуальных анатомических особенностях мочевыводящей системы, а также сопровождается высокой дозой облучения.</html>");
         jLabel124.setBounds(10,125,1095,85);
         jPanel9.add(jLabel124);
+
+        JPanel jPanel10 = new JPanel(null);
+        jPanel10.setBounds(10,2565,1095,500);
+        jPanel2.add(jPanel10);
+        jPanel10.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+        JLabel jLabelClinicAnaliz = new JLabel("ЛАБОРАТОРНЫЕ ИССЛЕДОВАНИЯ");
+        jLabelClinicAnaliz.setBounds(427,5,240,20);
+        jPanel10.add(jLabelClinicAnaliz);
+        JLabel jLabel125 = new JLabel("Рутинные лабораторные исследования при первичном выявлении МКБ (31-34), (А):");
+        jLabel125.setBounds(247,25,600,20);
+        jPanel10.add(jLabel125);
+
+        JPanel jPanel11 = new JPanel(null);
+        jPanel10.add(jPanel11);
+        jPanel11.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+        jPanel11.setBounds(5,50,185,360);
+        JLabel jLabel126 = new JLabel("ОБЩИЙ АНАЛИЗ КРОВИ:");
+        jLabel126.setBounds(5,10,185,20);
+        jPanel11.add(jLabel126);
+        JLabel jLabel127 = new JLabel("Гемоглобин:");
+        jLabel127.setBounds(5,30,100,20);
+        jPanel11.add(jLabel127);
+        JTextField jTextField34 = new JTextField();
+        jTextField34.setBounds(145,30,30,20);
+        jPanel11.add(jTextField34);
+        JLabel jLabel128 = new JLabel("Эритроциты:");
+        jLabel128.setBounds(5,55,100,20);
+        jPanel11.add(jLabel128);
+        JTextField jTextField35 = new JTextField();
+        jTextField35.setBounds(145,55,30,20);
+        jPanel11.add(jTextField35);
+        JLabel jLabel129 = new JLabel("Ht:");
+        jLabel129.setBounds(5,80,100,20);
+        jPanel11.add(jLabel129);
+        JTextField jTextField36 = new JTextField();
+        jTextField36.setBounds(145,80,30,20);
+        jPanel11.add(jTextField36);
+        JLabel jLabel130 = new JLabel("Лейкоциты:");
+        jLabel130.setBounds(5,105,100,20);
+        jPanel11.add(jLabel130);
+        JTextField jTextField37 = new JTextField();
+        jTextField37.setBounds(145,105,30,20);
+        jPanel11.add(jTextField37);
+        JLabel jLabel131 = new JLabel("ЦП:");
+        jLabel131.setBounds(5,130,100,20);
+        jPanel11.add(jLabel131);
+        JTextField jTextField38 = new JTextField();
+        jTextField38.setBounds(145,130,30,20);
+        jPanel11.add(jTextField38);
+        JLabel jLabel132 = new JLabel("Палочкоядерные:");
+        jLabel132.setBounds(5,155,130,20);
+        jPanel11.add(jLabel132);
+        JTextField jTextField39 = new JTextField();
+        jTextField39.setBounds(145,155,30,20);
+        jPanel11.add(jTextField39);
+        JLabel jLabel133 = new JLabel("Сегментоядерные:");
+        jLabel133.setBounds(5,180,140,20);
+        jPanel11.add(jLabel133);
+        JTextField jTextField40 = new JTextField();
+        jTextField40.setBounds(145,180,30,20);
+        jPanel11.add(jTextField40);
+        JLabel jLabel134 = new JLabel("Тромбоциты:");
+        jLabel134.setBounds(5,205,100,20);
+        jPanel11.add(jLabel134);
+        JTextField jTextField41 = new JTextField();
+        jTextField41.setBounds(145,205,30,20);
+        jPanel11.add(jTextField41);
+        JLabel jLabel135 = new JLabel("Эозинофилы:");
+        jLabel135.setBounds(5,230,100,20);
+        jPanel11.add(jLabel135);
+        JTextField jTextField42 = new JTextField();
+        jTextField42.setBounds(145,230,30,20);
+        jPanel11.add(jTextField42);
+        JLabel jLabel136 = new JLabel("Лимфоциты:");
+        jLabel136.setBounds(5,255,100,20);
+        jPanel11.add(jLabel136);
+        JTextField jTextField43 = new JTextField();
+        jTextField43.setBounds(145,255,30,20);
+        jPanel11.add(jTextField43);
+        JLabel jLabel137 = new JLabel("Моноциты:");
+        jLabel137.setBounds(5,280,100,20);
+        jPanel11.add(jLabel137);
+        JTextField jTextField44 = new JTextField();
+        jTextField44.setBounds(145,280,30,20);
+        jPanel11.add(jTextField44);
+        JLabel jLabel138 = new JLabel("Базофилы:");
+        jLabel138.setBounds(5,305,100,20);
+        jPanel11.add(jLabel138);
+        JTextField jTextField45 = new JTextField();
+        jTextField45.setBounds(145,305,30,20);
+        jPanel11.add(jTextField45);
+        JLabel jLabel139 = new JLabel("СОЭ:");
+        jLabel139.setBounds(5,330, 100,20);
+        jPanel11.add(jLabel139);
+        JTextField jTextField46 = new JTextField();
+        jTextField46.setBounds(145,330, 30,20);
+        jPanel11.add(jTextField46);
 
 
         String regex = "\\d+";
@@ -1237,8 +1334,355 @@ public class MainUI {
                 }else if (days>366){
                     Days +="В году 365 дней введите не больще 365 число";
                 }
+
+                String OAK = "";
+                String hbString = jTextField34.getText();
+                if (!hbString.isEmpty()) {
+                    int hb = Integer.parseInt(hbString);
+                    if (hb == 120) {
+                        //System.out.println("Ваши показатели гемоглобина соответствует к  норму");
+                        OAK+= "Ваши показатели гемоглобина соответствует к  норму\n";
+                    } else if (hb <= 119) {
+                        //System.out.println("Ваши показатели гемоглобина соответствует анемию");
+                        OAK+= "Ваши показатели гемоглобина соответствует анемию\n";
+                    } else if (hb <= 160) {
+                        OAK+= "Ваши показатели гемошлобина соответствует к  норму\n";
+//                        System.out.println("Ваши показатели гемошлобина соответствует к  норму");
+                    } else if (hb > 160 && hb <= 180) {
+                        OAK+="Уровень показатели гемоглобина высоко, необходимо повторно сдать ОАК\n";
+//                        System.out.println("Уровень показатели гемоглобина высоко, необходимо повторно сдать ОАК");
+                    } else {
+                        OAK+="Вы ввели неправильную показатели уровня гемглобина\n";
+                        //System.out.println("Вы ввели неправильную показатели уровня гемглобина");
+                    }
+                }
+
+                String EritString = jTextField35.getText();
+                if (!EritString.isEmpty()) {
+                    double Erit = Double.parseDouble(EritString);
+                    if (Erit == 3.6) {
+                        OAK += "Показатели эритроцитов в  норме\n";
+//                        System.out.println("Показатели эритроцитов в  норме");
+                    } else if (Erit < 2.9 && Erit > 4.9) {
+                        OAK += "Показатели эритроцитов в  норме\n";
+//                        System.out.println("Показатели эритроцитов в  норме");
+                    } else if (Erit > 4.9) {
+                        OAK += "У вас эритроцитоз (Повышено уровня эритроцитов (Эритроцитоз:)\n";
+//                        System.out.println("У вас эритроцитоз (Повышено уровня эритроцитов (Эритроцитоз:)");
+                    } else if (Erit < 2.89) {
+                        OAK += "у вас эритропения\n";
+//                        System.out.println("у вас эритропения");
+                    } else {
+                        OAK +="Вы ввели неправильную показатели уровня эритроцита\n";
+//                        System.out.println("Вы ввели неправильную показатели уровня эритроцита");
+                    }
+                }
+
+                String HtString = jTextField36.getText();
+                if (!HtString.isEmpty()) {
+                    int Ht = Integer.parseInt(HtString);
+                    if (Ht == 40) {
+                        OAK += "Показатели гематокрита в норме\n";
+//                        System.out.println("Показатели гематокрита в норме");
+                    } else if (Ht > 35 && Ht < 50) {
+                        OAK += "Показатели гематокрита в норме:\n";
+//                        System.out.println("Показатели гематокрита в норме:");
+                    } else if (Ht < 39) {
+                        OAK +="Показатели гематокрита снижен (Исключить анемию:)\n";
+//                        System.out.println("Показатели гематокрита снижен (Исключить анемию:)");
+                    } else if (Ht > 51) {
+                        OAK += "Показатели гематокрита высоко (исключите Полицистемия:)\n";
+//                        System.out.println("Показатели гематокрита высоко (исключите Полицистемия:)");
+                    } else {
+                        OAK += "Вы ввели неправильную показатели уровня эритроцита\n";
+//                        System.out.println("Вы ввели неправильную показатели уровня эритроцита");
+                    }
+                }
+
+                String LString = jTextField37.getText();
+                if (!LString.isEmpty()) {
+                    double L = Double.parseDouble(LString);
+                    if (L == 9) {
+                        OAK+= "Показатели лейкоциты в норме:\n";
+//                        System.out.println("Показатели лейкоциты в норме:");
+                    } else if (L < 4) {
+                        OAK +="Показатели лейкоцитов снижен:\n";
+//                        System.out.println("Показатели лейкоцитов снижен:");
+                    } else if (L > 10) {
+                        OAK+= "Показатели лейкоциты повышенно (Исключите воспалению:)\n";
+//                        System.out.println("Показатели лейкоциты повышенно (Исключите воспалению:)");
+                    }
+                }
+
+                String SPString=jTextField38.getText();
+                if (!SPString.isEmpty()) {
+                    double SP = Double.parseDouble(SPString);
+                    if (SP == 1) {
+                        OAK+= "Показатели цветного показателя в  норме (нормохромия)\n";
+//                        System.out.println("Показатели цветного показателя в  норме (нормохромия)");
+                    } else if (SP > 0.86 && SP < 1.05) {
+                        OAK+= "Показатели цветного показателя в  норме (нормохромия)\n";
+//                        System.out.println("Показатели цветного показателя в  норме (нормохромия)");
+                    } else if (SP < 1.06) {
+                        OAK+="Гиперхромия\n";
+//                        System.out.println("Гиперхромия");
+                    } else {
+                        OAK+= "Вы ввели неправильную показатели уровня цветного показателя (ЦП)\n";
+//                        System.out.println("Вы ввели неправильную показатели уровня цветного показателя (ЦП)");
+                    }
+                }
+                String PalochkiString = jTextField39.getText();
+                if (!PalochkiString.isEmpty()) {
+                    double Palochki = Double.parseDouble(PalochkiString);
+                    if (Palochki == 4) {
+                        OAK += "Показатели палочкоядерных нейтрофилов в норме\n";
+//                        System.out.println("Показатели палочкоядерных нейтрофилов в норме");
+                    } else if (Palochki < 0.5 && Palochki > 6) {
+                        OAK += "Показатели палочкоядерных нейтрофилов в норме\n";
+//                        System.out.println("Показатели палочкоядерных нейтрофилов в норме");
+                    } else if (Palochki < 0.5) {
+                        OAK += "Показатели палочкоядерных нейтрофилов снижен\n";
+//                        System.out.println("Показатели палочкоядерных нейтрофилов снижен(Исключите-Бактериальные инфекции в тяжелой форме " +
+//                                "(сильно сниженный уровень).\n" +
+//                                "Вирусные заболевания.\n" +
+//                                "Сильное отравление лекарствами или химикатами.\n" +
+//                                "Анемия, вызванная дефицитом витамина В.\n" +
+//                                "Онкологические болезни.\n" +
+//                                "Радиоактивное облучение )");
+                    } else if (Palochki > 6) {
+                        OAK += "Показатели палочкоядерных нейтрофилов  превышен\n";
+//                        System.out.println("Показатели палочкоядерных нейтрофилов  превышен Исклюсите(Воспаление легких (нейтрофилы палочкоядерные " +
+//                                "могут резко повыситься).\n" +
+//                                "Острый отит (клетки в крови повышены в несколько раз).\n" +
+//                                "Ревматизм.\n" +
+//                                "Ожоги.\n" +
+//                                "Подагра.\n" +
+//                                "Опухоли.\n" +
+//                                "Нефрит.\n" +
+//                                "Травмы различного характера.\n" +
+//                                "Дерматит.\n" +
+//                                "Анемия.\n" +
+//                                "Сахарный диабет и др.) В крови у женщин при беременности.\n" +
+//                                "Повышаться уровень можеи после операции.\n" +
+//                                "При медикаментозной терапии.\n" +
+//                                "От перемены температур.\n" +
+//                                "При кровопотерях.\n" +
+//                                "Нейтрофилы повышаются при тяжелых физических нагрузках.\n" +
+//                                "При эмоциональном стрессе.\n" +
+//                                "У ребенка в первые дни жизни.\n" +
+//                                "Ядерная желтуха. Опухоль органов ЖКТ.\n" +
+//                                "Инфаркт.\n" +
+//                                "Инсульт.\n" +
+//                                "Кожные болезни.\n" +
+//                                "Трофические язвы.\n" +
+//                                "Гнойные воспалительные процессы.\n" +
+//                                "Химическое отравление.");
+                    } else {
+                        OAK += "Вы ввели неправильную показатели палочкиядерных нейтрофилов\n";
+//                        System.out.println("Вы ввели неправильную показатели палочкиядерных нейтрофилов");
+                    }
+                }
+
+                String SegmentsString = jTextField40.getText();
+                if (!SegmentsString.isEmpty()) {
+                    int Segments = Integer.parseInt(SegmentsString);
+                    if (Segments == 60) {
+                       OAK += "Показатели сегментоядерных нейтроилов в норме\n";
+//                        System.out.println("Показатели сегментоядерных нейтроилов в норме");
+                    } else if (Segments < 47 && Segments > 72) {
+                        OAK+= "Показатели сегментоядерных нейтроилов в норме\n";
+//                        System.out.println("Показатели сегментоядерных нейтроилов в норме");
+                    } else if (Segments < 47) {
+                        OAK+= "Показатели сегментоядерных снижен.\n";
+//                        System.out.println("Показатели сегментоядерных снижен. Исключите (заболеваниях кровеносной системы и органов, " +
+//                                "отвечающих за кроветворение;\n" +
+//                                "применении химиотерапии при лечении больных со злокачественными новообразованиями;\n" +
+//                                "терапии противовирусными средствами;\n" +
+//                                "продолжительной инфекционной болезни;\n" +
+//                                "ярком аллергическом процессе;\n" +
+//                                "тиреотоксикозе;\n" +
+//                                "различных отклонениях в наследственности.)");
+                    } else if (Segments > 72) {
+                        OAK+= "Показатели сегментоядерных нейтрофилов повышен.\n";
+//                        System.out.println("Показатели сегментоядерных нейтрофилов повышен. Исклюсите (возникновение в острой форме инфекционного процесса;\n" +
+//                                "возникновение воспаления при некоторых заболеваниях;\n" +
+//                                "появление в организме мертвой зоны (при инфаркте сердечной мышцы);\n" +
+//                                "проведение вакцинации;\n" +
+//                                "отравление спиртным напитками;\n" +
+//                                "распадающееся новообразование;\n" +
+//                                "патологии почек;\n" +
+//                                "терапия такими веществами, как стероидные гормоны, гепарин." +
+//                                "повышаются клетки в состоянии длительной стрессовой ситуации;\n" +
+//                                "физическом переутомлении;\n" +
+//                                "состоянии у женщин перед менструациями;\n" +
+//                                "количество клеток увеличено при наличии беременности.)");
+                    } else {
+                        OAK += "Вы ввели неправильную показатели сегментоядерных нейтрофилов\n";
+//                        System.out.println("Вы ввели неправильную показатели сегментоядерных нейтрофилов");
+                    }
+                }
+                String RLTString = jTextField41.getText();
+                if (!RLTString.isEmpty()) {
+                    int RLT = Integer.parseInt(RLTString);
+                    if (RLT == 180) {
+                        OAK+= "Показатели тромбоцитов в норме:\n";
+//                        System.out.println("Показатели тромбоцитов в норме:");
+                    } else if (RLT > 181 && RLT < 320) {
+                        OAK+= "Показатели тромбоцитов в норме:\n";
+//                        System.out.println("Показатели тромбоцитов в норме:");
+                    } else if (RLT < 180) {
+                        OAK+= "Показатели тромбоцитов снижен\n";
+//                        System.out.println("Показатели тромбоцитов снижен");
+                    } else if (RLT > 320) {
+                        OAK+= "Показатели тромбоциты повышен\n";
+//                        System.out.println("Показатели тромбоциты повышен");
+                    }
+                }
+
+                String EozinphilsSting = jTextField42.getText();
+                if (!EozinphilsSting.isEmpty()) {
+                    double Eozinphils = Double.parseDouble(EozinphilsSting);
+                    if (Eozinphils == 3.0) {
+                        OAK+= "Показатели эозинофилов в  норме\n";
+//                        System.out.println("Показатели эозинофилов в  норме");
+                    } else if (Eozinphils > 0.5 && Eozinphils < 5) {
+                        OAK+= "Показатели эозинофилов  в  норме\n";
+//                        System.out.println("Показатели эозинофилов  в  норме");
+                    } else if (Eozinphils < 0.5) {
+                        OAK+= "Показатели эозинофилов снижен\n";
+//                        System.out.println("Показатели эозинофилов снижен");
+                    } else if (Eozinphils > 5) {
+                        OAK+= "Показатели эозинофилов превышен (Исключите аллергию или глисты в органзме)\n";
+//                        System.out.println("Показатели эозинофилов превышен (Исключите аллергию или глисты в органзме)");
+                    }
+                }
+                String LimfocitesString = jTextField43.getText();
+                if (!LimfocitesString.isEmpty()) {
+                    int Limfocites = Integer.parseInt(LimfocitesString);
+                    if (Limfocites == 25) {
+                        OAK+= "Показатели лимфоцитов в норме\n";
+//                        System.out.println("Показатели лимфоцитов в норме");
+                    } else if (Limfocites < 19 && Limfocites > 37) {
+                        OAK+= "Показатели лимфоцитов в норме\n";
+//                        System.out.println("Показатели лимфоцитов в норме");
+                    } else if (Limfocites < 19) {
+                        OAK+= "Показатели лимфоцитов снижен. Исключите лимфопения.\n";
+//                        System.out.println("Показатели лимфоцитов снижен. Исключите лимфопения. (СПИД.\n" +
+//                                "Хронические заболевания печени.\n" +
+//                                "Анемия.\n" +
+//                                "Гнойные процессы.\n" +
+//                                "Туберкулез.\n" +
+//                                "Инфекционные заболевание с тяжелым течением болезни.\n" +
+//                                "Противораковая терапия.\n" +
+//                                "Поражения лимфатических узлов.\n" +
+//                                "Врожденные иммунные заболевания.\n" +
+//                                "Патологии почек.\n" +
+//                                "Красная волчанка.\n" +
+//                                "Лимфосаркома и др.)" +
+//                                "Лейкоз.\n" +
+//                                "Лейкоцитоз.\n" +
+//                                "Облучение.\n" +
+//                                "Нейтрофилез.\n" +
+//                                "Хронические и острые инфекционные заболевания.");
+                    } else if (Limfocites > 37) {
+                        OAK+= "Показатели лимфоцитов превышен\n";
+//                        System.out.println("Показатели лимфоцитов превышен");
+                    } else {
+                        OAK+= "Вы ввели неправильную показателей лимфоцитов\n";
+//                        System.out.println("Вы ввели неправильную показателей лимфоцитов");
+                    }
+                }
+
+                String MonocitesString = jTextField44.getText();
+                if (!MonocitesString.isEmpty()) {
+                    int Monocites = Integer.parseInt(MonocitesString);
+                    if (Monocites == 5) {
+                        OAK+= "Показатели моноцитов в  норме\n";
+//                        System.out.println("Показатели моноцитов в  норме");
+                    } else if (Monocites < 3 && Monocites > 11) {
+                        OAK+= "Показатели моноцитов в норме\n";
+//                        System.out.println("Показатели моноцитов в норме");
+                    } else if (Monocites < 3) {
+                        OAK+= "Показатели моноцитов снижен. Исключите (Моноцитопения)\n";
+//                        System.out.println("Показатели моноцитов снижен. Исключите (Моноцитопения)- Апластическая и фолиеводефицитная анемии – " +
+//                                "наиболее распространенные причины.\n" +
+//                                "Острые инфекции, при которых происходит уменьшение количества нейтрофилов.\n" +
+//                                "Длительная терапия глюкокортикостероидами.\n" +
+//                                "Панцитопения.\n" +
+//                                "Волосатоклеточный лейкоз – самостоятельное заболевание, хотя и считается вариантом хронического лейкоза. " +
+//                                "Недуг довольно редкостный.\n" +
+//                                "Лучевая болезнь. ");
+                    } else if (Monocites > 11) {
+                        OAK+= "Показатели моноцитов превышен.\n";
+//                        System.out.println("Показатели моноцитов превыен. Исключите (туберкулез легких и внелегочный;\n" +
+//                                "сифилис;\n" +
+//                                "бруцеллез;\n" +
+//                                "подострый эндокардит;\n" +
+//                                "сепсис.)" +
+//                                "язвенный колит;\n" +
+//                                "энтерит.");
+                    } else {
+                        OAK+= "Вы ввели неправильную число\n";
+//                        System.out.println("Вы ввели неправильную число");
+                    }
+                }
+
+                String BazofilesString = jTextField45.getText();
+                if (!BazofilesString.isEmpty()) {
+                    double Bazofiles = Double.parseDouble(BazofilesString);
+                    if (Bazofiles == 0.65) {
+                        OAK+= "Показатели базофилов в норме\n";
+//                        System.out.println("Показатели базофилов в норме");
+                    } else if (Bazofiles < 0.01 && Bazofiles > 1) {
+                        OAK+="Показатели базофилов в норме\n";
+//                        System.out.println("Показатели базофилов в норме");
+                    } else if (Bazofiles < 0.01) {
+                        OAK+= "Показатели базофилов снижен.\n";
+//                        System.out.println("Показатели базофилов снижен. Исключите (Острые инфекционные недуги.\n" +
+//                                "Гипертиреоз.\n" +
+//                                "Болезнь и синдром Кушинга.\n" +
+//                                "Пневмония.)");
+                    } else if (Bazofiles > 1) {
+                        OAK+= "хронический миелолейкоз;\n";
+//                        System.out.println("хронический миелолейкоз;\n" +
+//                                "лимфогранулематоз или болезнь Ходжкина: чаще встречается у подростков, а также пики заболеваемости наблюдаются" +
+//                                " в 20 и в 50 лет;\n" +
+//                                "острый лейкоз;\n" +
+//                                "истинная полицитемия.\n" +
+//                                "Хронические воспалительные процессы в ЖКТ.\n" +
+//                                "Гипотиреоз.\n" +
+//                                "Острый гепатит, который проходит в сопровождении желтухи.\n" +
+//                                "Гемолитическая анемия.");
+                    } else {
+                        OAK+= "Вы ввели неправильную показатели базофилов\n";
+//                        System.out.println("Вы ввели неправильную показатели базофилов");
+                    }
+                }
+                String SOEString = jTextField46.getText();
+                if (!SOEString.isEmpty()) {
+                    int SOE = Integer.parseInt(SOEString);
+                    if (SOE == 15) {
+                        OAK+= "Показатели СОЭ соответствует к  норму\n";
+//                        System.out.println("Показатели СОЭ соответствует к  норму");
+                    } else if (SOE > 1 && SOE < 15) {
+                        OAK += "Показатели СОЭ соответствует к  норму\n";
+//                        System.out.println("Показатели СОЭ соответствует к  норму");
+                    } else if (SOE < 1) {
+                        OAK += "Показатели СОЭ снижен:\n";
+//                        System.out.println("Показатели СОЭ снижен:");
+                    } else if (SOE > 16) {
+                        OAK += "Показатели СОЭ повышенно исключите воспалению:\n";
+//                        System.out.println("Показатели СОЭ повышенно исключите воспалению:");
+                    } else {
+                        OAK += "Вы ввели не верную число:\n";
+//                        System.out.println("Вы ввели не верную число:");
+                    }
+                }
+
+
                 JOptionPane.showMessageDialog(jFrame,
-                        result + "\n" + clinic1 + "\n" + details + "\n" + xray1 + "\n" + etiology1 + "\n" + mineral1 + "\n" + riskFormation1 + "\n"+ Hours + "\n" + Days + "\n");
+                        result + "\n" + clinic1 + "\n" + details + "\n" + xray1 + "\n" + etiology1 + "\n" + mineral1 + "\n" + riskFormation1 + "\n"+ Hours + "\n" + Days + "\n"
+                +OAK +"\n");
             }
         });
 
