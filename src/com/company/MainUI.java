@@ -806,7 +806,7 @@ public class MainUI {
         jPanel9.add(jLabel124);
 
         JPanel jPanel10 = new JPanel(null);
-        jPanel10.setBounds(10,2565,1095,500);
+        jPanel10.setBounds(10,2565,1095,435);
         jPanel2.add(jPanel10);
         jPanel10.setBorder(BorderFactory.createLineBorder(Color.BLUE));
         JLabel jLabelClinicAnaliz = new JLabel("ЛАБОРАТОРНЫЕ ИССЛЕДОВАНИЯ");
@@ -819,7 +819,7 @@ public class MainUI {
         JPanel jPanel11 = new JPanel(null);
         jPanel10.add(jPanel11);
         jPanel11.setBorder(BorderFactory.createLineBorder(Color.BLUE));
-        jPanel11.setBounds(5,50,185,370);
+        jPanel11.setBounds(5,50,185,375);
         JLabel jLabel126 = new JLabel("ОБЩИЙ АНАЛИЗ КРОВИ:");
         jLabel126.setBounds(5,10,185,20);
         jPanel11.add(jLabel126);
@@ -904,7 +904,7 @@ public class MainUI {
 
         JPanel jPanel12 = new JPanel(null);
         jPanel10.add(jPanel12);
-        jPanel12.setBounds(195,50,300,370);
+        jPanel12.setBounds(195,50,300,375);
         jPanel12.setBorder(BorderFactory.createLineBorder(Color.BLUE));
         JLabel jLabel140 = new JLabel("ОБЩИЙ АНАЛИЗ МОЧИ:");
         jLabel140.setBounds(60,10, 180,20);
@@ -1048,7 +1048,7 @@ public class MainUI {
 
         JPanel jPanel15 = new JPanel(null);
         jPanel15.setBorder(BorderFactory.createLineBorder(Color.BLUE));
-        jPanel15.setBounds(500,295,180,125);
+        jPanel15.setBounds(500,295,180,130);
         jPanel10.add(jPanel15);
         JLabel jLabel163 = new JLabel("ПЕЧЕНОЧНЫЕ ТЕСТЫ");
         jLabel163.setBounds(15,5,150,20);
@@ -1077,6 +1077,191 @@ public class MainUI {
         JTextField jTextField65 = new JTextField();
         jTextField65.setBounds(135,100,40,20);
         jPanel15.add(jTextField65);
+
+        JPanel jPanel16 = new JPanel(null);
+        jPanel16.setBounds(685,50,170,105);
+        jPanel16.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+        jPanel10.add(jPanel16);
+        JLabel jLabel168 = new JLabel("ПОЧЕЧНЫЕ ТЕСТЫ");
+        jLabel168.setBounds(15,10,150,20);
+        jPanel16.add(jLabel168);
+        JLabel jLabel169 = new JLabel("мочевина:");
+        jLabel169.setBounds(5,30,100,20);
+        jPanel16.add(jLabel169);
+        JTextField jTextField66 = new JTextField();
+        jTextField66.setBounds(125,32,40,20);
+        jPanel16.add(jTextField66);
+        JLabel jLabel170 = new JLabel("остаточный азот:");
+        jLabel170.setBounds(5,55,120,20);
+        jPanel16.add(jLabel170);
+        JTextField jTextField67 = new JTextField();
+        jTextField67.setBounds(125,57,40,20);
+        jPanel16.add(jTextField67);
+        JLabel jLabel171 = new JLabel("креатинин:");
+        jLabel171.setBounds(5,80,120,20);
+        jPanel16.add(jLabel171);
+        JTextField jTextField68 = new JTextField();
+        jTextField68.setBounds(125,80,40,20);
+        jPanel16.add(jTextField68);
+
+        JPanel jPanel17 = new JPanel(null);
+        jPanel10.add(jPanel17);
+        jPanel17.setBounds(685,160,170,105);
+        jPanel17.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+        JLabel jLabel172 = new JLabel("<html>БЕЛКИ И БЕЛКОВЫЕ<br> ФРАКЦИИ</html>");
+        jLabel172.setBounds(10,3,150,30);
+        jPanel17.add(jLabel172);
+        JLabel jLabel173 = new JLabel("Общий белок:");
+        jLabel173.setBounds(5,30,100,20);
+        jPanel17.add(jLabel173);
+        JTextField jTextField69 = new JTextField();
+        jTextField69.setBounds(125,30,40,20);
+        jPanel17.add(jTextField69);
+        JLabel jLabel174 = new JLabel("альбумины:");
+        jLabel174.setBounds(5,55,100,20);
+        jPanel17.add(jLabel174);
+        JTextField jTextField70 = new JTextField();
+        jTextField70.setBounds(125,57,40,20);
+        jPanel17.add(jTextField70);
+        JLabel jLabel175 = new JLabel("глобулины:");
+        jLabel175.setBounds(5,80,100,20);
+        jPanel17.add(jLabel175);
+        JTextField jTextField71 = new JTextField();
+        jTextField71.setBounds(125,80,40,20);
+        jPanel17.add(jTextField71);
+
+        JPanel jPanel18 = new JPanel(null);
+        jPanel10.add(jPanel18);
+        jPanel18.setBounds(685,270,170,155);
+        jPanel18.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+        JLabel jLabel176 = new JLabel("ЭЛЕКТРОЛИТЫ КРОВИ");
+        jLabel176.setBounds(5,5,170,20);
+        jPanel18.add(jLabel176);
+        JLabel jLabel177 = new JLabel("Калий (K):");
+        jLabel177.setBounds(5,30,100,20);
+        jPanel18.add(jLabel177);
+        JTextField jTextField72 = new JTextField();
+        jTextField72.setBounds(125,30,40,20);
+        jPanel18.add(jTextField72);
+        JLabel jLabel178 = new JLabel("Натрий (Na):");
+        jLabel178.setBounds(5,55,100,20);
+        jPanel18.add(jLabel178);
+        JTextField jTextField73 = new JTextField();
+        jTextField73.setBounds(125,55,40,20);
+        jPanel18.add(jTextField73);
+        JLabel jLabel179 = new JLabel("Кальций (Ca):");
+        jLabel179.setBounds(5,80,100,20);
+        jPanel18.add(jLabel179);
+        JTextField jTextField74 = new JTextField();
+        jTextField74.setBounds(125,80,40,20);
+        jPanel18.add(jTextField74);
+        JLabel jLabel180 = new JLabel("Фосфор (P):");
+        jLabel180.setBounds(5,105,100,20);
+        jPanel18.add(jLabel180);
+        JTextField jTextField75 = new JTextField();
+        jTextField75.setBounds(125,105,40,20);
+        jPanel18.add(jTextField75);
+        JLabel jLabel181 = new JLabel("Магний (Mg):");
+        jLabel181.setBounds(5,130,100,20);
+        jPanel18.add(jLabel181);
+        JTextField jTextField76 = new JTextField();
+        jTextField76.setBounds(125,130,40,20);
+        jPanel18.add(jTextField76);
+
+        JPanel jPanel19 = new JPanel(null);
+        jPanel10.add(jPanel19);
+        jPanel19.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+        jPanel19.setBounds(860,50,190,215);
+        JLabel jLabel182 = new JLabel("КОАГУЛОГРАММА");
+        jLabel182.setBounds(5,10,150,20);
+        jPanel19.add(jLabel182);
+        JLabel jLabel183 = new JLabel("По Ли-Уайту:");
+        jLabel183.setBounds(5,30,100,20);
+        jPanel19.add(jLabel183);
+        JTextField jTextField77 =  new JTextField();
+        jTextField77.setBounds(145,30,40,20);
+        jPanel19.add(jTextField77);
+        JLabel jLabel184 = new JLabel("По Дюку:");
+        jLabel184.setBounds(5,55,120,20);
+        jPanel19.add(jLabel184);
+        JTextField jTextField78 =  new JTextField();
+        jTextField78.setBounds(145,55,40,20);
+        jPanel19.add(jTextField78);
+        JLabel jLabel185 = new JLabel("<html>Протромбирование<br>время по Квику:</html>");
+        jLabel185.setBounds(5,80,135,30);
+        jPanel19.add(jLabel185);
+        JTextField jTextField79 = new JTextField();
+        jTextField79.setBounds(145,85,40,20);
+        jPanel19.add(jTextField79);
+        JLabel jLabel186 = new JLabel("МНО:");
+        jLabel186.setBounds(5,110,120,20);
+        jPanel19.add(jLabel186);
+        JTextField jTextField80 =  new JTextField();
+        jTextField80.setBounds(145,110,40,20);
+        jPanel19.add(jTextField80);
+        JLabel jLabel187 = new JLabel("ПТИ:");
+        jLabel187.setBounds(5,133,120,20);
+        jPanel19.add(jLabel187);
+        JTextField jTextField81 = new JTextField();
+        jTextField81.setBounds(145,133,40,20);
+        jPanel19.add(jTextField81);
+        JLabel jLabel188 = new JLabel("<html>тромбированое <br>время:</html>");
+        jLabel188.setBounds(5,156,120,30);
+        jPanel19.add(jLabel188);
+        JTextField jTextField82 = new JTextField();
+        jTextField82.setBounds(145,158,40,20);
+        jPanel19.add(jTextField82);
+        JLabel jLabel189 = new JLabel("Фибриноген:");
+        jLabel189.setBounds(5,185,120,20);
+        jPanel19.add(jLabel189);
+        JTextField jTextField83 = new JTextField();
+        jTextField83.setBounds(145,185,40,20);
+        jPanel19.add(jTextField83);
+
+        JPanel jPanel20 = new JPanel(null);
+        jPanel20.setBounds(860,270,190,90);
+        jPanel20.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+        jPanel10.add(jPanel20);
+        JLabel jLabel190 = new JLabel("ГОРМОНЫ:");
+        jLabel190.setBounds(35,5,120,20);
+        jPanel20.add(jLabel190);
+        JLabel jLabel191 = new JLabel("<html>паратиреоидный<br>гормон (ПТГ):</html>");
+        jLabel191.setBounds(5,30,120,30);
+        jPanel20.add(jLabel191);
+        JTextField jTextField84 = new JTextField();
+        jTextField84.setBounds(145,37,40,20);
+        jPanel20.add(jTextField84);
+        JLabel jLabel192 = new JLabel("кальтитонин крови:");
+        jLabel192.setBounds(5,65,140,20);
+        jPanel20.add(jLabel192);
+        JTextField jTextField85 = new JTextField();
+        jTextField85.setBounds(145,65,40,20);
+        jPanel20.add(jTextField85);
+
+        JPanel jPanel21 = new JPanel(null);
+        jPanel21.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+        jPanel21.setBounds(860,365,190,60);
+        jPanel10.add(jPanel21);
+        JLabel jLabel193 = new JLabel("ПОСЕВ МОЧИ:");
+        jLabel193.setBounds(10,5,120,20);
+        jPanel21.add(jLabel193);
+        JTextField jTextField86 = new JTextField();
+        jTextField86.setBounds(5,30,180,20);
+        jPanel21.add(jTextField86);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         String regex = "\\d+";
         jButtonresult.addActionListener(new ActionListener() {
