@@ -643,12 +643,12 @@ public class MainUI {
         JLabel jLabel92 = new JLabel("Почечная колика:");
         jLabel92.setBounds(10, 25, 130, 20);
         jPanel8.add(jLabel92);
-        JLabel jLabel93 = new JLabel("Часы:");
-        jLabel93.setBounds(140, 25, 50, 20);
-        jPanel8.add(jLabel93);
-        JTextField jTextField16 = new JTextField();
-        jTextField16.setBounds(190,28,40,20);
-        jPanel8.add(jTextField16);
+//        JLabel jLabel93 = new JLabel("Часы:");
+//        jLabel93.setBounds(140, 25, 50, 20);
+//        jPanel8.add(jLabel93);
+//        JTextField jTextField16 = new JTextField();
+//        jTextField16.setBounds(190,28,40,20);
+//        jPanel8.add(jTextField16);
         JLabel jLabel94 = new JLabel("Сутки:");
         jLabel94.setBounds(240,25,70,20);
         jPanel8.add(jLabel94);
@@ -658,12 +658,12 @@ public class MainUI {
         JLabel jLabel95 = new JLabel("Двигательное возбуждение:");
         jLabel95.setBounds(350,25,220,20);
         jPanel8.add(jLabel95);
-        JLabel jLabel96 = new JLabel("Часы:");
-        jLabel96.setBounds(560,25,50,20);
-        jPanel8.add(jLabel96);
-        JTextField jTextField18 = new JTextField();
-        jTextField18.setBounds(610,28,40,20);
-        jPanel8.add(jTextField18);
+//        JLabel jLabel96 = new JLabel("Часы:");
+//        jLabel96.setBounds(560,25,50,20);
+//        jPanel8.add(jLabel96);
+//        JTextField jTextField18 = new JTextField();
+//        jTextField18.setBounds(610,28,40,20);
+//        jPanel8.add(jTextField18);
         JLabel jLabel97 = new JLabel("Сутки:");
         jLabel97.setBounds(660,25,50,20);
         jPanel8.add(jLabel97);
@@ -673,12 +673,12 @@ public class MainUI {
         JLabel jLabel98 = new JLabel("Тошнота, рвота:");
         jLabel98.setBounds(770,25,150,20);
         jPanel8.add(jLabel98);
-        JLabel jLabel99 = new JLabel("Часы:");
-        jLabel99.setBounds(895,25,50,20);
-        jPanel8.add(jLabel99);
-        JTextField jTextField20 = new JTextField();
-        jTextField20.setBounds(945,28,40,20);
-        jPanel8.add(jTextField20);
+//        JLabel jLabel99 = new JLabel("Часы:");
+//        jLabel99.setBounds(895,25,50,20);
+//        jPanel8.add(jLabel99);
+//        JTextField jTextField20 = new JTextField();
+//        jTextField20.setBounds(945,28,40,20);
+//        jPanel8.add(jTextField20);
         JLabel jLabel100 = new JLabel("Сутки:");
         jLabel100.setBounds(990,25,50,20);
         jPanel8.add(jLabel100);
@@ -688,12 +688,12 @@ public class MainUI {
         JLabel jLabel101 = new JLabel("Возможное повышение температуры тела с потрясающим ознобом:");
         jLabel101.setBounds(10,50,480,20);
         jPanel8.add(jLabel101);
-        JLabel jLabel102 = new JLabel("Часы:");
-        jLabel102.setBounds(560,50,50,20);
-        jPanel8.add(jLabel102);
-        JTextField jTextField22 = new JTextField();
-        jTextField22.setBounds(610,53,40,20);
-        jPanel8.add(jTextField22);
+//        JLabel jLabel102 = new JLabel("Часы:");
+//        jLabel102.setBounds(560,50,50,20);
+//        jPanel8.add(jLabel102);
+//        JTextField jTextField22 = new JTextField();
+//        jTextField22.setBounds(610,53,40,20);
+//        jPanel8.add(jTextField22);
         JLabel jLabel103 = new JLabel("Сутки:");
         jLabel103.setBounds(660,50,50,20);
         jPanel8.add(jLabel103);
@@ -703,12 +703,12 @@ public class MainUI {
         JLabel jLabel104 = new JLabel("Дизурия:");
         jLabel104.setBounds(770,50,140,20);
         jPanel8.add(jLabel104);
-        JLabel jLabel105 = new JLabel("Часы:");
-        jLabel105.setBounds(895,50,50,20);
-        jPanel8.add(jLabel105);
-        JTextField jTextField24 = new JTextField();
-        jTextField24.setBounds(945,53,40,20);
-        jPanel8.add(jTextField24);
+//        JLabel jLabel105 = new JLabel("Часы:");
+//        jLabel105.setBounds(895,50,50,20);
+//        jPanel8.add(jLabel105);
+//        JTextField jTextField24 = new JTextField();
+//        jTextField24.setBounds(945,53,40,20);
+//        jPanel8.add(jTextField24);
         JLabel jLabel106 = new JLabel("Сутки:");
         jLabel106.setBounds(990,50,50,20);
         jPanel8.add(jLabel106);
@@ -718,12 +718,12 @@ public class MainUI {
         JLabel jLabel107 = new JLabel("<html>Специфичные изменения локализации болевых ощущений при перемещении конкремента:</html>");
         jLabel107.setBounds(10,138,600,30);
         jPanel8.add(jLabel107);
-        JLabel jLabel108 = new JLabel("Часы:");
-        jLabel108.setBounds(560,138,50,20);
-        jPanel8.add(jLabel108);
-        JTextField jTextField26 = new JTextField();
-        jTextField26.setBounds(610,141,40,20);
-        jPanel8.add(jTextField26);
+//        JLabel jLabel108 = new JLabel("Часы:");
+//        jLabel108.setBounds(560,138,50,20);
+//        jPanel8.add(jLabel108);
+//        JTextField jTextField26 = new JTextField();
+//        jTextField26.setBounds(610,141,40,20);
+//        jPanel8.add(jTextField26);
         JLabel jLabel109 = new JLabel("Сутки:");
         jLabel109.setBounds(660,138,50,20);
         jPanel8.add(jLabel109);
@@ -739,21 +739,21 @@ public class MainUI {
         JTextField jTextField28 = new JTextField();
         jTextField28.setBounds(610,111,40,20);
         jPanel8.add(jTextField28);
-        JLabel jLabel112 = new JLabel("Сутки:");
-        jLabel112.setBounds(660,108,50,20);
-        jPanel8.add(jLabel112);
-        JTextField jTextField29 = new JTextField();
-        jTextField29.setBounds(710,111,40,20);
-        jPanel8.add(jTextField29);
+//        JLabel jLabel112 = new JLabel("Сутки:");
+//        jLabel112.setBounds(660,108,50,20);
+//        jPanel8.add(jLabel112);
+//        JTextField jTextField29 = new JTextField();
+//        jTextField29.setBounds(710,111,40,20);
+//        jPanel8.add(jTextField29);
         JLabel jLabel113= new JLabel("Может также протекать бессимптомно:");
         jLabel113.setBounds(10,78,300,20);
         jPanel8.add(jLabel113);
-        JLabel jLabel114 = new JLabel("Часы:");
-        jLabel114.setBounds(300,78,50,20);
-        jPanel8.add(jLabel114);
-        JTextField jTextField30 = new JTextField();
-        jTextField30.setBounds(350,81,40,20);
-        jPanel8.add(jTextField30);
+//        JLabel jLabel114 = new JLabel("Часы:");
+//        jLabel114.setBounds(300,78,50,20);
+//        jPanel8.add(jLabel114);
+//        JTextField jTextField30 = new JTextField();
+//        jTextField30.setBounds(350,81,40,20);
+//        jPanel8.add(jTextField30);
         JLabel jLabel115 = new JLabel("Сутки:");
         jLabel115.setBounds(400,78, 50,20);
         jPanel8.add(jLabel115);
@@ -763,12 +763,12 @@ public class MainUI {
         JLabel jLabel116 = new JLabel("Отхождение конкремента (специфический признак):");
         jLabel116.setBounds(520,78,370,20);
         jPanel8.add(jLabel116);
-        JLabel jLabel117 = new JLabel("Часы:");
-        jLabel117.setBounds(895,78,50,20);
-        jPanel8.add(jLabel117);
-        JTextField jTextField32 = new JTextField();
-        jTextField32.setBounds(945,78,40,20);
-        jPanel8.add(jTextField32);
+//        JLabel jLabel117 = new JLabel("Часы:");
+//        jLabel117.setBounds(895,78,50,20);
+//        jPanel8.add(jLabel117);
+//        JTextField jTextField32 = new JTextField();
+//        jTextField32.setBounds(945,78,40,20);
+//        jPanel8.add(jTextField32);
         JLabel jLabel118 = new JLabel("Сутки:");
         jLabel118.setBounds(990,81,50,20);
         jPanel8.add(jLabel118);
@@ -1249,6 +1249,53 @@ public class MainUI {
         jTextField86.setBounds(5,30,180,20);
         jPanel21.add(jTextField86);
 
+        JPanel jPanel22 = new JPanel(null);
+        jPanel22.setBounds(10,3005,1095,80);
+        jPanel22.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+        jPanel2.add(jPanel22);
+        JLabel jLabel194 = new JLabel(" ОЦЕНКА РИСКА КАМНЕОБРАЗОВАНИЯ - ЛИТОГЕННЫЕ СУБСТРАКЦИИ СУТОЧНОЙ МОЧИ");
+        jLabel194.setBounds(228,5,620,20);
+        jPanel22.add(jLabel194);
+        JLabel jLabel195 = new JLabel("Концентрационные показатели:");
+        jLabel195.setBounds(432,25,230,20);
+        jPanel22.add(jLabel195);
+        JLabel jLabel196 = new JLabel("Кальций:");
+        jLabel196.setBounds(10,45,80,20);
+        jPanel22.add(jLabel196);
+        JTextField jTextField87 = new JTextField();
+        jTextField87.setBounds(80,48,40,20);
+        jPanel22.add(jTextField87);
+        JLabel jLabel197 = new JLabel("Магний:");
+        jLabel197.setBounds(180,45,80,20);
+        jPanel22.add(jLabel197);
+        JTextField jTextField88 = new JTextField();
+        jTextField88.setBounds(240,48,40,20);
+        jPanel22.add(jTextField88);
+        JLabel jLabel198 = new JLabel("Оксалаты:");
+        jLabel198.setBounds(340,45,80,20);
+        jPanel22.add(jLabel198);
+        JTextField jTextField89 = new JTextField();
+        jTextField89.setBounds(420,48,40,20);
+        jPanel22.add(jTextField89);
+        JLabel jLabel199 = new JLabel("Фосфор:");
+        jLabel199.setBounds(540,45,80,20);
+        jPanel22.add(jLabel199);
+        JTextField jTextField90 = new JTextField();
+        jTextField90.setBounds(610,48,40,20);
+        jPanel22.add(jTextField90);
+        JLabel jLabel200 = new JLabel("Креатинин:");
+        jLabel200.setBounds(720,45,100,20);
+        jPanel22.add(jLabel200);
+        JTextField jTextField91 =new JTextField();
+        jTextField91.setBounds(810,48,40,20);
+        jPanel22.add(jTextField91);
+        JLabel jLabel201 = new JLabel("Мочевая кислота:");
+        jLabel201.setBounds(920,45,130,20);
+        jPanel22.add(jLabel201);
+        JTextField jTextField92 = new JTextField();
+        jTextField92.setBounds(1050,48,40,20);
+        jPanel22.add(jTextField92);
+
 
 
 
@@ -1675,14 +1722,14 @@ public class MainUI {
                 String riskFormation1 = !riskFormation.isEmpty() ? "ПО ГРУППАМ РИСКА ОБРАЗОВАНИЯ КАМНЕЙ: " + riskFormation : "\n";
 
                 String Hours = "";
-                int hours = getNumber(jTextField16.getText());
-                if (hours == -1) {
-                    System.out.println("Введите число");
-                }
-                if (hours >=1 && hours<=24) {
-                    Hours += "срочно обезболивайте ";
-                    single++;
-                }
+//                int hours = getNumber(jTextField16.getText());
+//                if (hours == -1) {
+//                    System.out.println("Введите число");
+//                }
+//                if (hours >=1 && hours<=24) {
+//                    Hours += "срочно обезболивайте ";
+//                    single++;
+//                }
                 String Days ="";
                 int days = getNumber(jTextField17.getText());
                 if (days == -1){
