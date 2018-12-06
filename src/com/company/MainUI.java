@@ -29,7 +29,7 @@ public class MainUI {
         JPanel jPanel2 = new JPanel(null);
         jPanel.add(jPanel2, BorderLayout.CENTER);
         jPanel2.setBorder(BorderFactory.createLineBorder(Color.BLUE));
-        jPanel2.setPreferredSize(new Dimension(1020, 3500));
+        jPanel2.setPreferredSize(new Dimension(1020, 4500));
 
         JPanel jPanel3 = new JpanelLongStone();
         jPanel2.add(jPanel3);
@@ -1295,6 +1295,30 @@ public class MainUI {
         JTextField jTextField92 = new JTextField();
         jTextField92.setBounds(1050,48,40,20);
         jPanel22.add(jTextField92);
+
+        JPanel jPanel23 = new JPanel(null);
+        jPanel23.setBounds(10,3090,1095,100);
+        jPanel23.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+        jPanel2.add(jPanel23);
+        JLabel jLabel202 = new JLabel("АНАЛИТИЧЕСКИЕ ХАРАКТЕРИСТИКИ ЛИТОС-ТЕСТА:");
+        jLabel202.setHorizontalAlignment(SwingConstants.CENTER);
+        jLabel202.setBounds(10,5,1095,20);
+        jPanel23.add(jLabel202);
+        JLabel jLabel203 = new JLabel("Комплект позволяет проводить определение следующих процесса камнеобразования:");
+        jLabel203.setBounds(10,20,1095,20);
+        jLabel203.setHorizontalAlignment(SwingConstants.CENTER);
+        jPanel23.add(jLabel203);
+        JCheckBox jCheckBox83 = new JCheckBox("Слабый процесс камнеобразования, степень активности - I;");
+        jCheckBox83.setBounds(10,35,990,20);
+        jPanel23.add(jCheckBox83);
+        JCheckBox jCheckBox84 = new JCheckBox("Умеренный процесс камнеобразования, степень активности - II;");
+        jCheckBox84.setBounds(10,55,600,20);
+        jPanel23.add(jCheckBox84);
+        JCheckBox jCheckBox85 = new JCheckBox("Выраженный (гиперактивный) процесс камнеобразования, степень активности - III;");
+        jCheckBox85.setBounds(10,75,750,20);
+        jPanel23.add(jCheckBox85);
+
+
 
 
 
