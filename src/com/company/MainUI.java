@@ -1318,6 +1318,23 @@ public class MainUI {
         jCheckBox85.setBounds(10,75,750,20);
         jPanel23.add(jCheckBox85);
 
+        JPanel jPanel24 = new OksalatPanel();
+        jPanel2.add(jPanel24);
+        jPanel24.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+        jPanel24.setBounds(10,3195,1095,200);
+        JLabel jLabel204 = new JLabel("ОКСАЛАТ КАЛЬЦИЯ:");
+        jLabel204.setBounds(435,5,145,20);
+        jLabel204.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        jPanel24.add(jLabel204);
+        JLabel jLabel205 = new JLabel("Суточная моча:");
+        jLabel205.setBounds(445,40,120,20);
+        jLabel205.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        jLabel205.setHorizontalAlignment(SwingConstants.CENTER);
+        jPanel24.add(jLabel205);
+        JCheckBox jCheckBox86 = new JCheckBox("ГИПЕРКАЛЬЦИУРИЯ:");
+        jCheckBox86.setBounds(10,90,175,20);
+        jPanel24.add(jCheckBox86);
+
 
 
 
