@@ -1370,9 +1370,32 @@ public class MainUI {
         jCheckBox99.setBounds(936,129,129,20);
         jPanel24.add(jCheckBox99);
         JLabel jLabel205 = new JLabel("<html><i>Диагностический и терапевтический алгоритм при конкреметнах (оксалат кальция)" +
-                " Примечание: не назначать препараты магния пациентам с почечной недостаточносью</i></html>");
-        jLabel205.setBounds(10,220,1095,30);
+                " <br>Примечание: не назначать препараты магния пациентам с почечной недостаточносью</i></html>");
+        jLabel205.setBounds(275,220,600,30);
         jPanel24.add(jLabel205);
+
+        JPanel jPanel25 = new FosfatPanel();
+        jPanel2.add(jPanel25);
+        jPanel25.setBounds(10,3455,1095,200);
+        jPanel25.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+        JCheckBox jCheckBox100 = new JCheckBox("ФОСФАТ КАЛЬЦИЯ:");
+        jCheckBox100.setBounds(447,8,163,20);
+        jPanel25.add(jCheckBox100);
+        JCheckBox jCheckBox101 = new JCheckBox("КАРБОНАТАПАТИТ");
+        jCheckBox101.setBounds(10,45,160,20);
+        jPanel25.add(jCheckBox101);
+        JLabel jLabel206 = new JLabel("Основная оценка");
+        jLabel206.setBounds(10,75,130,20);
+        jPanel25.add(jLabel206);
+        JCheckBox jCheckBox102 = new JCheckBox("<html>Гиперкальциурия <br> >8 ммоль/сут.</html>");
+        jCheckBox102.setBounds(10,105,145,30);
+        jPanel25.add(jCheckBox102);
+        JCheckBox jCheckBox103 = new JCheckBox("pH мочи >5,8");
+        jCheckBox103.setBounds(170,105,120,20);
+        jPanel25.add(jCheckBox103);
+        
+
+
 
 
 
