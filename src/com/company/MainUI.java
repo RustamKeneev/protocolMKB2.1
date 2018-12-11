@@ -1382,18 +1382,41 @@ public class MainUI {
         jCheckBox100.setBounds(447,8,163,20);
         jPanel25.add(jCheckBox100);
         JCheckBox jCheckBox101 = new JCheckBox("КАРБОНАТАПАТИТ");
-        jCheckBox101.setBounds(10,45,160,20);
+        jCheckBox101.setBounds(170,45,153,20);
         jPanel25.add(jCheckBox101);
         JLabel jLabel206 = new JLabel("Основная оценка");
-        jLabel206.setBounds(10,75,130,20);
+        jLabel206.setBounds(180,90,124,20);
         jPanel25.add(jLabel206);
         JCheckBox jCheckBox102 = new JCheckBox("<html>Гиперкальциурия <br> >8 ммоль/сут.</html>");
-        jCheckBox102.setBounds(10,105,145,30);
+        jCheckBox102.setBounds(10,130,145,30);
         jPanel25.add(jCheckBox102);
         JCheckBox jCheckBox103 = new JCheckBox("pH мочи >5,8");
-        jCheckBox103.setBounds(170,105,120,20);
+        jCheckBox103.setBounds(180,130,120,20);
         jPanel25.add(jCheckBox103);
-        
+        JLabel jLabel207 =new JLabel("<html>Если показатели Ca превышенно<br>исключите гиперпаратиреоз</html>");
+        jLabel207.setBounds(330,130,230,30);
+        jPanel25.add(jLabel207);
+        JCheckBox jCheckBox104 = new JCheckBox("БРУШИТ");
+        jCheckBox104.setBounds(805,45,88,20);
+        jPanel25.add(jCheckBox104);
+        JLabel jLabel208 = new JLabel("Основная оценка");
+        jLabel208.setBounds(790,90,130,20);
+        jPanel25.add(jLabel208);
+        JLabel jLabel209 = new JLabel("<html>Исключите <br>гиперпаратиреоз</html>");
+        jLabel209.setBounds(630,130,120,30);
+        jPanel25.add(jLabel209);
+        JCheckBox jCheckBox105 = new JCheckBox("<html>Гиперкальциурия <br> >8 ммоль/сут.</html>");
+        jCheckBox105.setBounds(790,130,130,30);
+        jPanel25.add(jCheckBox105);
+        JLabel jLabel210 = new JLabel("Исклюите ПТА");
+        jLabel210.setBounds(975,130,100,20);
+        jPanel25.add(jLabel210);
+        JLabel jLabel211 = new JLabel("Диагностический и терапевтический алгоритм при фософат-кальциевых конкрементах. " +
+                " Примичание: ИМВП - инфекции мочевыводящих путей.");
+        jLabel211.setBounds(5,170,1095,30);
+        jLabel211.setHorizontalAlignment(SwingConstants.CENTER);
+        jPanel25.add(jLabel211);
+
 
 
 
