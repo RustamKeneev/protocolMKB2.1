@@ -1,6 +1,8 @@
 package com.company;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -29,7 +31,7 @@ public class MainUI {
         JPanel jPanel2 = new JPanel(null);
         jPanel.add(jPanel2, BorderLayout.CENTER);
         jPanel2.setBorder(BorderFactory.createLineBorder(Color.BLUE));
-        jPanel2.setPreferredSize(new Dimension(1020, 4500));
+        jPanel2.setPreferredSize(new Dimension(1020, 5500));
 
         JPanel jPanel3 = new JpanelLongStone();
         jPanel2.add(jPanel3);
@@ -1417,23 +1419,105 @@ public class MainUI {
         jLabel211.setHorizontalAlignment(SwingConstants.CENTER);
         jPanel25.add(jLabel211);
 
+        JPanel jPanel26 = new UratesPanel();
+        jPanel2.add(jPanel26);
+        jPanel26.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+        jPanel26.setBounds(10,3660,1095,295);
+        JCheckBox jCheckBox106 = new JCheckBox("КОНКРЕМЕНТЫ, СОДЕРЖАЩИЕ УРАТЫ");
+        jCheckBox106.setBounds(407,7,298,20);
+        jPanel26.add(jCheckBox106);
+        JCheckBox jCheckBox107 = new JCheckBox("Конкременты из мочевой кислоты");
+        jCheckBox107.setBounds(70,60,265,20);
+        jPanel26.add(jCheckBox107);
+        JLabel jLabel212 = new JLabel("Основная оценка");
+        jLabel212.setBounds(135,100,120,20);
+        jPanel26.add(jLabel212);
+        JCheckBox jCheckBox108 = new JCheckBox("<html>Угнетения синтеза мочевой <br>кислоты рН мочи <6</html>");
+        jCheckBox108.setBounds(11,150,160,40);
+        jPanel26.add(jCheckBox108);
+        JCheckBox jCheckBox109 = new JCheckBox("<html>Щелочной цитрат 9-12г/сут <br>или бикарбанат натрия 1,5г.</html>");
+        jCheckBox109.setBounds(11,220, 223,35);
+        jPanel26.add(jCheckBox109);
+        JCheckBox jCheckBox110 = new JCheckBox("Гиперурикозурия");
+        jCheckBox110.setBounds(331,150,147,20);
+        jPanel26.add(jCheckBox110);
+        JCheckBox jCheckBox111 = new JCheckBox(">4,0 ммоль/сут.");
+        jCheckBox111.setBounds(260,220,140,20);
+        jPanel26.add(jCheckBox111);
+        JCheckBox jCheckBox112 = new JCheckBox("<html>>4,0 ммоль/сут. и <br>гиперурикемия >380мкмоль/л.</html>");
+        jCheckBox112.setBounds(426,220,240,35);
+        jPanel26.add(jCheckBox112);
+        JCheckBox jCheckBox113 = new JCheckBox("Конкременты из урата аммония");
+        jCheckBox113.setBounds(770,60,250,20);
+        jPanel26.add(jCheckBox113);
+        JLabel jLabel213 = new JLabel("Основная оценка");
+        jLabel213.setBounds(850,100,120,20);
+        jPanel26.add(jLabel213);
+        JCheckBox jCheckBox114 = new JCheckBox("pH мочи > 6,5");
+        jCheckBox114.setBounds(845,150,125,20);
+        jPanel26.add(jCheckBox114);
+        JLabel jLabel214 = new JLabel("Диагностический и терапевтический алгоритм при конкрементах из мочевой кислоты и урата аммония");
+        jLabel214.setBounds(10,270,1095,20);
+        jLabel214.setHorizontalAlignment(SwingConstants.CENTER);
+        jPanel26.add(jLabel214);
 
+        JPanel jPanel27 = new JPanel();
+        jPanel27.setBounds(10,3960,1095,1000);
+        jPanel27.setBorder(BorderFactory.createLineBorder(Color.BLUE));
+        JLabel jLabel215 = new JLabel("ДИФФЕРЕНЦИАЛЬНАЯ ДИАГНОСТИКА МКБ ");
+        jPanel27.add(jLabel215, BorderLayout.NORTH);
+        DefaultTableModel model3 = new DefaultTableModel();
 
+        model3.addColumn("Патология");
+        model3.addColumn("Жалобы");
+        model3.addColumn("Данные осмотра");
+        model3.addColumn("УЗ картина");
+        model3.addRow(new Object[]{"<html><b>МКБ (почечная колика)</b></html>",
+                "<html>Острая нарастающая боль в поясничной области на стороне поражения с иррадиацией вниз по ходу мочеточника (подвздошная, " +
+                        "паховая области, бедро, половые органы). Беспокойное поведение, невозможность найти удобное положение тела, тошнота, рвота, дизурия, гематурия</html>",
+                "<html>Защитное напряжение мышц боковых отделов живота и поясничной области на стороне поражения, болезненность при пальпации в проекции почки, положительный симптом Гольдфлама</html>",
+                "<html>Увеличение и ограничение подвижности пораженной почки, отчетливое изображение почечной капсулы, утолщение паренхимы, расширение ЧЛС и мочеточника, яркая акустическая тень и дорожка</html>"});
+        model3.addRow(new Object[]{"<html><b>Печеночная колика</b></html>",
+                "<html>Острая нарастающая боль в правом подреберье с иррадиацией вверх – плечо, надплечье, правая половина шеи, лица, под лопатку. Беспокойное поведение, " +
+                        "тошнота, рвота</html>",
+                "<html>Ограниченная подвижность верхней половины живота, симптом Ортнера, болезненность в правом подреберье, перитонеальные симптомы</html>",
+                "<html>Отсутствие патологии правой почки. Измененный желчный пузырь, конкременты в нем и в протоках, признаки холестаза</html>"});
+        model3.addRow(new Object[]{"<html><b>Острый аппендицит</b></html>",
+                "<html>Ноющая боль в эпигастрии, переходящая в правую подвздошную область, чаще без иррадиации, тошнота, рвота, относительно неподвижное положение тела</html>",
+                "<html>Ограничение дыхательной подвижности нижних отделов живота справа, защитное напряжение мышц, болезненность правой подвздошной области, аппендикулярные и перитонеальные симптомы</html>",
+                "<html>Отсутствие патологичес-ких изменений правой почки и ЧЛС</html>"});
+        model3.addRow(new Object[]{"<html><b>Острый панкреатит</b></html>",
+                "<html>Острая опоясывающая боль в животе, тошнота, многократная рвота, неподвижное положение тела</html>",
+                "<html>Ограничение подвижности передней брюшной стенки, ригидность и болезненность, защитное напряжение мышц верхних отделов живота, болезненность в левом реберно-позвоночном углу, перитонеальные симптомы</html>",
+                "<html>Отсутствие патологических изменений правой почки и ЧЛС</html>"});
+        model3.addRow(new Object[]{"<html><b>Перфоративная язва желудка и ДПК</b></html>",
+                "<html>Острая «кинжальная» боль в животе, состояние близкое к шоковому, бледность, неподвижное положение</html>",
+                "<html>«Доскообразный» живот, защитное напряжение брюшных мышц, разлитая болезненность, перитонеальные симптомы, исчезновение печеночной тупости, признаки свободной жидкости в брюшной полости перкуторно</html>",
+                "<html>Отсутствие патологических изменений правой почки и ЧЛС. Признаки газа и свободной жидкости в брюшной полости</html>"});
 
+        JTable jTable3 = new JTable(model3);
+//        jTable3.getInsets(new Insets(5,5,5,5));
 
+        DefaultTableCellRenderer topRenderer = new DefaultTableCellRenderer();
+        topRenderer.setVerticalAlignment(DefaultTableCellRenderer.TOP);
+        jTable3.getColumn("Патология").setCellRenderer( topRenderer );
+        jTable3.getColumn("Жалобы").setCellRenderer( topRenderer );
+        jTable3.getColumn("Данные осмотра").setCellRenderer( topRenderer );
+        jTable3.getColumn("УЗ картина").setCellRenderer( topRenderer );
 
-
-
-
-
-
-
-
-
-
-
-
-
+        jTable3.setRowHeight(0,100);
+        jTable3.setRowHeight(1,100);
+        jTable3.setRowHeight(2,100);
+        jTable3.setRowHeight(3,100);
+        jTable3.setRowHeight(4,100);
+        jTable3.clearSelection();
+        JScrollPane jScrollPane3 = new JScrollPane(jTable3);
+        jPanel27.add(jScrollPane3);
+        jScrollPane3.setPreferredSize(new Dimension(998,520));
+        JLabel jLabel216 = new JLabel("<html><i>Крайне важны своевременные консультации и подключение к диагностике и лечению других специалистов (по показаниям)</i></html>");
+        jLabel216.setBounds(10,520,1000,20);
+        jPanel27.add(jLabel216);
+        jPanel2.add(jPanel27);
 
 
         String regex = "\\d+";
